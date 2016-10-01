@@ -1,0 +1,52 @@
+body {
+  margin: 0 !important;
+}
+
+/****** Site Header ******/
+header {
+  position: fixed;
+}
+
+header ul {
+  padding-left: 6px;
+}
+
+header li {
+  display: inline-block;
+  color: grey;
+}
+
+.header-link {
+  text-decoration: none;
+  color: grey;
+  font-size: 1rem;
+}
+
+.header-link-divider {
+  padding-right: 12px;
+  padding-left: 8px;
+  border-right: 1px solid grey;
+}
+
+
+.landing-section {
+  width: 100vw;
+  height: 100vh;
+
+  background-image: url(../assets/images/long-exposure-of-city-street.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.landing-logo {
+  width: 60%;
+  margin-left: 20%;
+}
+
+@media(max-width: 800px) {
+  .landing-logo {
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 100px;
+  }
+}
