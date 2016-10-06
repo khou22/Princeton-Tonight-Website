@@ -66,6 +66,52 @@ body {
 /**********    About Section    **********/
 .about-section {
   background-color: black;
-  height: 100vh;
+  height: 400px;
   transform: translateZ(0px);
+}
+
+.about-image-container {
+  float: left;
+  width: 40%;
+  height: 100%;
+
+  /*background-color: orange;*/
+}
+
+.about-image {
+  height: 100%;
+  /*margin-top: 5%;*/
+  /*margin-left: 5%;*/
+}
+
+@media(max-width: 800px) {
+  .about-image-container {
+    display: none;
+  }
+
+  .about-description {
+    width: 100% !important;
+  }
+}
+
+.about-description {
+  float: right;
+  width: 55%;
+}
+
+.about-description-text {
+  color: white;
+  font-size: 22px;
+  line-height: 28px;
+  height: 60%;
+
+  margin-top: 15%;
+}
+
+
+/**********    Schedule Section    **********/
+.schedule-section {
+  height: 500px;
+  background-image: url(../assets/images/blair-arch-at-night.jpg);
+  background-size: cover;
 }
