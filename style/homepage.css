@@ -96,7 +96,7 @@ body {
 
 .about-description {
   float: right;
-  width: 55%;
+  width: 60%;
 }
 
 .about-description-text {
@@ -106,6 +106,7 @@ body {
   height: 60%;
 
   margin-top: 15%;
+  margin-right: 15%;
 }
 
 
@@ -114,5 +115,25 @@ body {
   height: 500px;
   background-image: url(../assets/images/blair-arch-at-night.jpg);
   background-size: cover;
+  background-position: center;
+  transform: translateZ(0px);
+}
+
+/**********    Events Section    **********/
+.events-section {
+  height: 300px;
+  background-color: black;
+  transform: translateZ(0px);
+
+  color: white;
+}
+
+
+/**********    Contact Section    **********/
+.contact-section {
+  height: 500px;
+  background-image: url(../assets/images/nassau-at-night.jpg);
+  background-size: cover;
+  background-position: center;
   transform: translateZ(0px);
 }
