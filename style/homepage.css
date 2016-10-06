@@ -2,33 +2,6 @@ body {
   margin: 0 !important;
 }
 
-/****** Site Header ******/
-header {
-  position: fixed;
-}
-
-header ul {
-  padding-left: 6px;
-}
-
-header li {
-  display: inline-block;
-  color: grey;
-}
-
-.header-link {
-  text-decoration: none;
-  color: grey;
-  font-size: 1rem;
-}
-
-.header-link-divider {
-  padding-right: 12px;
-  padding-left: 8px;
-  border-right: 1px solid grey;
-}
-
-
 .landing-section {
   width: 100vw;
   height: 100vh;
@@ -49,4 +22,39 @@ header li {
     margin-left: 5%;
     margin-top: 100px;
   }
+}
+
+/**********    Parallax    **********/
+.parallax {
+  perspective: 1px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-color: black;
+}
+.parallax__group {
+  position: relative;
+  height: 100vh;
+  transform-style: preserve-3d;
+}
+.parallax__layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.parallax__layer--base {
+  transform: translateZ(0);
+}
+.parallax__layer--back {
+  transform: translateZ(-1px) scale(2);
+}
+
+/**********    About Section    **********/
+.about-section {
+  background-image: url(../assets/images/long-exposure-of-city-street.jpg);
+  height: 100vh;
+  transform: translateZ(0px);
 }

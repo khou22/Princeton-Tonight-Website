@@ -1,0 +1,26 @@
+/****** Site Header ******/
+header {
+  position: fixed;
+  z-index: 9999 !important;
+}
+
+header ul {
+  padding-left: 6px;
+}
+
+header li {
+  display: inline-block;
+  color: grey;
+}
+
+.header-link {
+  text-decoration: none;
+  color: grey;
+  font-size: 1rem;
+}
+
+.header-link-divider {
+  padding-right: 12px;
+  padding-left: 8px;
+  border-right: 1px solid grey;
+}
