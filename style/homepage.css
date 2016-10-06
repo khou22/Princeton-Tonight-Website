@@ -114,4 +114,5 @@ body {
   height: 500px;
   background-image: url(../assets/images/blair-arch-at-night.jpg);
   background-size: cover;
+  transform: translateZ(0px);
 }
