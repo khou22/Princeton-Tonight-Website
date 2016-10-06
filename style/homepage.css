@@ -6,7 +6,7 @@ body {
   width: 100vw;
   height: 100vh;
 
-  background-image: url(../assets/images/long-exposure-of-city-street.jpg);
+  /*background-image: url(../assets/images/long-exposure-of-city-street.jpg);*/
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -22,6 +22,16 @@ body {
     width: 90%;
     margin-left: 5%;
     margin-top: 100px;
+  }
+}
+
+.landing-video {
+  height: 100%;
+}
+
+@media(max-width: 800px) {
+  .landing-video {
+    margin-left: -25%;
   }
 }
 
@@ -55,7 +65,7 @@ body {
 
 /**********    About Section    **********/
 .about-section {
-  background-color: orange;
+  background-color: black;
   height: 100vh;
   transform: translateZ(0px);
 }
