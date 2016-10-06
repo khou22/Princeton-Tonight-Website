@@ -14,6 +14,7 @@ body {
 .landing-logo {
   width: 60%;
   margin-left: 20%;
+  margin-top: 75px;
 }
 
 @media(max-width: 800px) {
@@ -46,7 +47,7 @@ body {
 }
 
 .parallax__layer--base {
-  transform: translateZ(0);
+  transform: translateZ(-.60px) scale(1.60);
 }
 .parallax__layer--back {
   transform: translateZ(-1px) scale(2);
@@ -54,7 +55,7 @@ body {
 
 /**********    About Section    **********/
 .about-section {
-  background-image: url(../assets/images/long-exposure-of-city-street.jpg);
+  background-color: orange;
   height: 100vh;
   transform: translateZ(0px);
 }
