@@ -20,6 +20,7 @@ body {
   width: 300px;
   padding: 10px;
   margin: auto;
+  margin-top: 10%;
   border: 10px solid white;
   text-align: center;
   font-size: 72px;
@@ -34,6 +35,7 @@ body {
 .video-block {
   display: inline-block;
   border: 1px solid gray;
+  position: relative;
 
   /*Width of each video block*/
   width: 30%;
@@ -49,4 +51,71 @@ body {
 
 .video-thumbnail-img {
   width: 100%;
+}
+
+.video-description {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+}
+
+.video-description {
+  /*Sizing*/
+  width: 90%;
+  height: 80%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+
+  /*Font styling*/
+  font-size: 17px;
+  text-align: center;
+  opacity: 0;
+}
+
+.description-hover {
+  opacity: 1;
+  -webkit-animation: fadeIn 500ms 1;
+}
+
+.video-fade {
+  -webkit-filter: brightness(40%) blur(6px);
+  filter: brightness(40%) blur(6px);
+
+  -webkit-animation: videoFilter 500ms 1;
+  animation: videoFilter 500ms 1;
+}
+
+@-webkit-keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@-webkit-keyframes videoFilter {
+  from {
+    -webkit-filter: none;
+    filter: none;
+  }
+  to {
+    -webkit-filter: brightness(40%) blur(6px);
+    filter: brightness(40%) blur(6px);
+  }
+}
+
+@keyframes videoFilter {
+  from {
+    -webkit-filter: none;
+    filter: none;
+  }
+  to {
+    -webkit-filter: brightness(40%) blur(6px);
+    filter: brightness(40%) blur(6px);
+  }
 }
