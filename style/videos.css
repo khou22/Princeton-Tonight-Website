@@ -1,4 +1,52 @@
 body {
+  position: absolute;
+  margin: 0 !important;
+  overflow-x: hidden;
   background-color: black;
   color: white;
+}
+
+.page-header {
+  margin-top: 60px;
+  width: 100%;
+  height: 25vh;
+
+  background-image: url(../assets/images/long-exposure-of-city-street.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.page-header-title {
+  width: 300px;
+  padding: 10px;
+  margin: auto;
+  border: 10px solid white;
+  text-align: center;
+  font-size: 72px;
+
+  font-family: "Impact", Charcoal, sans-serif;
+}
+
+.video-grid {
+  width: 100%;
+}
+
+.video-block {
+  display: inline-block;
+  border: 1px solid gray;
+
+  /*Width of each video block*/
+  width: 30%;
+  margin: 1.5%;
+}
+
+@media(max-width: 800px) {
+  .video-block {
+    width: 90%;
+    margin: 5%;
+  }
+}
+
+.video-thumbnail-img {
+  width: 100%;
 }
