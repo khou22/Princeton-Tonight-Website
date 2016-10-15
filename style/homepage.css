@@ -33,6 +33,21 @@ body {
   .landing-video {
     margin-left: -25%;
   }
+
+  .countdown-block {
+    display: none;
+  }
+}
+
+.countdown-block {
+  width: 70%;
+  margin-left: 15%;
+}
+
+/*Overide some clock values*/
+.flip-clock-wrapper ul {
+  width: 9% !important;
+  height: 90px !important;
 }
 
 /**********    Parallax    **********/

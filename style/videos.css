@@ -32,6 +32,22 @@ body {
   width: 100%;
 }
 
+a .video-block-link {
+  color: white !important;
+}
+
+a: link {
+  color: white !important;
+}
+
+a:visited {
+  color: white !important;
+}
+
+a:hover {
+  color: white !important;
+}
+
 .video-block {
   display: inline-block;
   border: 1px solid gray;
@@ -84,8 +100,8 @@ body {
   -webkit-filter: brightness(40%) blur(6px);
   filter: brightness(40%) blur(6px);
 
-  -webkit-animation: videoFilter 500ms 1;
-  animation: videoFilter 500ms 1;
+  -webkit-animation: videoFilter 200ms 1;
+  animation: videoFilter 200ms 1;
 }
 
 @-webkit-keyframes fadeIn {
@@ -118,4 +134,15 @@ body {
     -webkit-filter: brightness(40%) blur(6px);
     filter: brightness(40%) blur(6px);
   }
+}
+
+/******  Main video section  ******/
+.main-video-section {
+  display: block;
+  width: 100vw;
+}
+
+.main-video-frame {
+  float: left;
+  width: 40%;
 }
