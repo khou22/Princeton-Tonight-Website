@@ -1,5 +1,9 @@
 // React framework for Videos Page
 
+$(window).load(function() {
+  $("#header").load("../header.html"); // Load the header file
+}
+
 var VideosPage = React.createClass({
   getInitialState: function() {
     console.log(videoData);
