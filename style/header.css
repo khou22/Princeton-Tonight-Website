@@ -1,11 +1,15 @@
 /****** Site Header ******/
 header {
-  position: fixed;
+  position: absolute;;
   z-index: 9999 !important;
-}
+  width: 100vw;
 
-header ul {
-  padding-left: 6px;
+  /*Pin to bottom*/
+  bottom: 0;
+
+  /*Styling*/
+  border-top: 1px solid black;
+  background-color: white;
 }
 
 header li {
@@ -20,7 +24,6 @@ header li {
 }
 
 .header-link-divider {
-  padding-right: 12px;
-  padding-left: 8px;
-  border-right: 1px solid grey;
+  width: 25%;
+  text-align: center;
 }
