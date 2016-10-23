@@ -40,6 +40,13 @@ body {
   }
 }
 
+.section-header {
+  font-size: 3vmax;
+  color: white;
+  margin-left: 24px;
+  margin-top: 12px;
+}
+
 /****** About section ******/
 .about-image {
   float: left;
@@ -60,7 +67,20 @@ body {
   text-align: left;
   color: white;
   margin: 24px;
-  font-size: 150%;
+  font-size: 2.2vmax;
+}
+
+/****** Video section ******/
+.current-video {
+  width: 40%;
+  float: left;
+  height: 100%;
+}
+
+.past-videos {
+  width: 60%;
+  float: right;
+  height: 100%;
 }
 
 /****** Event section ******/
@@ -68,13 +88,6 @@ body {
   width: 40%;
   height: 100%;
   float: left;
-}
-
-.events-header {
-  font-size: 36px;
-  color: white;
-  margin-left: 12px;
-  margin-top: 12px;
 }
 
 .google-calendar {

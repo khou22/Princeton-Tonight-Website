@@ -32,5 +32,5 @@ var fixedHeader = function() {
 var scrollTo = function(sectionID) {
   $('html, body').animate({
     scrollTop: $(sectionID).offset().top - $('#header').height()
-  }, 1000);
+  }, 500);
 }
