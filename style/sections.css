@@ -3,3 +3,23 @@
   height: 400px;
   background-color: black;
 }
+
+.image-divider {
+  width: 100%;
+  height: 300px;
+  background-color: white;
+
+  /*Background image properties*/
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/* Images */
+.nassau-img {
+  background-image: url(../assets/images/nassau-at-night.jpg);
+}
+
+.blair-img {
+  background-image: url(../assets/images/blair-arch-at-night.jpg);
+}

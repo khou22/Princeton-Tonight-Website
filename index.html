@@ -11,32 +11,61 @@
     <!-- Jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script type="text/jsx" src="homepage.js"></script>
+    <script src="header.js"></script>
 
   </head>
   <body>
-    <header>
+    <header id="header">
       <ul>
         <li class="header-link-divider">
-          <a href="#" class="header-link">HOME</a>
+          <a onclick="scrollTo('#about')" class="header-link">HOME</a>
         </li>
         <li class="header-link-divider">
-          <a href="videos" class="header-link">VIDEOS</a>
+          <a onclick="scrollTo('#events')" class="header-link">EVENTS</a>
         </li>
         <li class="header-link-divider">
-          <a href="#" class="header-link">CONTACT</a>
+          <a onclick="scrollTo('#videos')" class="header-link">VIDEOS</a>
+        </li>
+        <li class="header-link-divider">
+          <a onclick="scrollTo('#contact')" class="header-link">CONTACT</a>
         </li>
         <li style="padding-left: 8px">
-          <a href="#" class="header-link">TEAM</a>
+          <a onclick="scrollTo('#team')" class="header-link">TEAM</a>
         </li>
       </ul>
     </header>
     <div class="landing-section">
-      <video class="landing-video" autoplay loop muted>
+      <!-- <video class="landing-video" autoplay loop muted>
         <source src="assets/videos/street-time-lapse.mp4" type="video/mp4">
-      </video>
+      </video> -->
       <img src="assets/images/logo-sample-4.png" class="landing-logo">
     </div>
-    <div class="section">
+    <div class="image-divider nassau-img">
+    </div>
+    <div class="section" id="about">
+      <div class="about-image">
+      </div>
+      <div class="about-text">
+        <p>Princeton Tonight is Princeton University’s broadcast television show! Featuring celebrity guest interviews plus the best that Princeton television and film has to offer from sketch comedy to short films, there’s something for everyone. Like us on Facebook (link) for updates on content releases and live events near you – they’re always free and open to the public.</p>
+      </div>
+    </div>
+    <div class="image-divider blair-img">
+    </div>
+    <div class="section" id="videos">
+      Videos
+    </div>
+    <div class="image-divider nassau-img">
+    </div>
+    <div class="section" id="events">
+      <div class="current-fb-event">
+        <h2 class="events-header">Events</h2>
+      </div>
+      <div class="google-calendar">
+        <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=princeton.edu_e0gc7j7mm143eoreqpn0mgkm4s%40group.calendar.google.com&amp;color=%230F4B38&amp;ctz=America%2FNew_York"
+                style="border-width:0" width="100%" height="100%" frameborder="0" scrolling="no"></iframe>
+      </div>
+    </div>
+    <div class="image-divider blair-img">
     </div>
   </body>
 </html>

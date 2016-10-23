@@ -4,9 +4,6 @@ header {
   z-index: 9999 !important;
   width: 100vw;
 
-  /*Pin to bottom*/
-  bottom: 0;
-
   /*Styling*/
   border-top: 1px solid black;
   background-color: white;
@@ -24,6 +21,6 @@ header li {
 }
 
 .header-link-divider {
-  width: 25%;
+  width: 20%;
   text-align: center;
 }
