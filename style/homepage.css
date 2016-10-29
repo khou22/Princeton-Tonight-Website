@@ -70,6 +70,10 @@ body {
   font-size: 2.2vmax;
 }
 
+.social-media-buttons {
+  margin: 24px;
+}
+
 /****** Video section ******/
 .current-video {
   width: 40%;
