@@ -25,3 +25,10 @@ header li {
   width: 20%;
   text-align: center;
 }
+
+.header-icon {
+  height: 2rem;
+  margin-bottom: -0.5rem;
+  margin-right: 2rem;
+  opacity: 1;
+}
