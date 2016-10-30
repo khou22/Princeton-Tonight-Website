@@ -1,4 +1,4 @@
-console.log("Video data loaded");
+// console.log("Video data loaded");
 // Looks best with 6 videos
 var videoData = [
   {

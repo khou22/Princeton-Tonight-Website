@@ -1,8 +1,8 @@
-console.log("loaded");
+// console.log("loaded");
 
 var PreviousVideos = React.createClass({
   render: function() {
-    console.log(videoData);
+    // console.log(videoData);
     var videoNodes = videoData.map(function(video) {
       return (
         <VideoBlock videoData={video} />
