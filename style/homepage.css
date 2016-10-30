@@ -6,6 +6,7 @@ body {
 .landing-section {
   width: 100vw;
   height: 100vh;
+  overflow-y: hidden;
 
   background-image: url(../assets/images/long-exposure-of-city-street.jpg);
   background-size: cover;
@@ -16,7 +17,7 @@ body {
   position: absolute;
   width: 60%;
   margin-left: 20%;
-  top: 0;
+  top: 17%;
   transform: translateY(50%);
   z-index: 1;
 }
@@ -89,19 +90,98 @@ body {
   height: 100%;
 }
 
-.video-block-link {
-  width: 30%;
-  height: 30%;
-  display: inline-block;
+.video-grid {
+  width: 100%;
 }
 
-.video-description-div {
-  margin-top: -30%;
+.video-block {
+  display: inline-block;
+  border: 1px solid gray;
+  position: relative;
+
+  /*Width of each video block*/
+  width: 30%;
+  margin: 1.5%;
+}
+
+@media(max-width: 800px) {
+  .video-block {
+    width: 90%;
+    margin: 5%;
+  }
 }
 
 .video-thumbnail-img {
   width: 100%;
+}
+
+.video-description {
+  width: 100%;
   height: 100%;
+  position: absolute;
+  top: 0px;
+}
+
+.video-description {
+  /*Sizing*/
+  width: 90%;
+  height: 80%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+
+  /*Font styling*/
+  font-size: 12px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  opacity: 0;
+}
+
+.description-hover {
+  opacity: 1;
+  -webkit-animation: fadeIn 500ms 1;
+}
+
+.video-fade {
+  -webkit-filter: brightness(40%) blur(6px);
+  filter: brightness(40%) blur(6px);
+
+  -webkit-animation: videoFilter 500ms 1;
+  animation: videoFilter 500ms 1;
+}
+
+@-webkit-keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@-webkit-keyframes videoFilter {
+  from {
+    -webkit-filter: none;
+    filter: none;
+  }
+  to {
+    -webkit-filter: brightness(40%) blur(6px);
+    filter: brightness(40%) blur(6px);
+  }
+}
+
+@keyframes videoFilter {
+  from {
+    -webkit-filter: none;
+    filter: none;
+  }
+  to {
+    -webkit-filter: brightness(40%) blur(6px);
+    filter: brightness(40%) blur(6px);
+  }
 }
 
 /****** Event section ******/
@@ -115,4 +195,9 @@ body {
   width: 60%;
   height: 100%;
   float: right;
+}
+
+.mc_embed_signup {
+  background: none;
+  color: white;
 }
