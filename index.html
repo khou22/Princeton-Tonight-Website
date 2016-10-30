@@ -20,7 +20,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.3/JSXTransformer.js"></script>
 
   </head>
-  <body>
+  <body id="body">
     <header id="header">
       <ul>
         <li class="header-link-divider">
@@ -114,4 +114,10 @@
     <div class="image-divider studio-img">
     </div>
   </body>
+  <script>
+    // Not ready for mobile
+    if ($(window).width() < 600) {
+      document.getElementById('body').innerHTML = "Kindly use your laptop";
+    }
+  </script>
 </html>
