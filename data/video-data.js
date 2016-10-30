@@ -1,3 +1,4 @@
+console.log("Video data loaded");
 var videoData = [
   {
     title: "Princeton Tonight S01E01 - Mike DelGuidice",

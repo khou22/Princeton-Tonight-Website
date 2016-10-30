@@ -11,8 +11,13 @@
 
     <!-- Jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script type="text/jsx" src="homepage.js"></script>
+
+    <script src="data/video-data.js"></script>
     <script src="header.js"></script>
+
+    <!-- React -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.3/react.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.3/JSXTransformer.js"></script>
 
   </head>
   <body>
@@ -22,16 +27,16 @@
           <a onclick="scrollTo('#about')" class="header-link"><img class="header-icon" src="assets/icons/home-icon.png">HOME</a>
         </li>
         <li class="header-link-divider">
-          <a onclick="scrollTo('#events')" class="header-link"><img class="header-icon" src="assets/icons/home-icon.png">EVENTS</a>
+          <a onclick="scrollTo('#events')" class="header-link"><img class="header-icon" src="assets/icons/events-icon.png">EVENTS</a>
         </li>
         <li class="header-link-divider">
-          <a onclick="scrollTo('#videos')" class="header-link"><img class="header-icon" src="assets/icons/home-icon.png">VIDEOS</a>
+          <a onclick="scrollTo('#videos')" class="header-link"><img class="header-icon" src="assets/icons/video-icon.png">VIDEOS</a>
         </li>
         <li class="header-link-divider">
-          <a onclick="scrollTo('#contact')" class="header-link"><img class="header-icon" src="assets/icons/home-icon.png">CONTACT</a>
+          <a onclick="scrollTo('#contact')" class="header-link"><img class="header-icon" src="assets/icons/contact-icon.png">CONTACT</a>
         </li>
         <li style="padding-left: 8px">
-          <a onclick="scrollTo('#team')" class="header-link"><img class="header-icon" src="assets/icons/home-icon.png">TEAM</a>
+          <a onclick="scrollTo('#team')" class="header-link"><img class="header-icon" src="assets/icons/team-icon.png">TEAM</a>
         </li>
       </ul>
     </header>
@@ -41,7 +46,7 @@
       </video> -->
       <img src="assets/images/logo-sample-4.png" class="landing-logo">
     </div>
-    <div class="image-divider nassau-img">
+    <div class="image-divider nassau-evening-img">
     </div>
     <div class="section" id="about">
       <div class="about-image">
@@ -58,7 +63,7 @@
         </div>
       </div>
     </div>
-    <div class="image-divider blair-img">
+    <div class="image-divider chapel-img">
     </div>
     <div class="section" id="videos">
       <div class="current-video">
@@ -66,9 +71,9 @@
       </div>
       <div id="previous-videos">
       </div>
-      <script type="text/jsx" src="videos.js"></script>
+      <script type="text/jsx;harmony=true" src="videos.js"></script>
     </div>
-    <div class="image-divider nassau-img">
+    <div class="image-divider woodrow-wilson-img">
     </div>
     <div class="section" id="events">
       <div class="current-fb-event">

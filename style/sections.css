@@ -16,10 +16,22 @@
 }
 
 /* Images */
-.nassau-img {
+.nassau-night-img {
   background-image: url(../assets/images/nassau-at-night.jpg);
+}
+
+.nassau-evening-img {
+  background-image: url(../assets/images/nassau-evening.jpg);
 }
 
 .blair-img {
   background-image: url(../assets/images/blair-arch-at-night.jpg);
+}
+
+.woodrow-wilson-img {
+  background-image: url(../assets/images/woodrow-wilson.jpg);
+}
+
+.chapel-img {
+  background-image: url(../assets/images/princeton-university-chapel.jpg);
 }
