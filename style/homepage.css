@@ -31,13 +31,15 @@ body {
 }
 
 .landing-video {
-  height: 120%;
-  margin-left: -10%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
 }
 
 @media(max-width: 800px) {
   .landing-video {
-    margin-left: -25%;
+    /*margin-left: -25%;*/
   }
 }
 
@@ -184,20 +186,43 @@ body {
   }
 }
 
-/****** Event section ******/
-.current-fb-event {
-  width: 40%;
-  height: 100%;
-  float: left;
-}
-
-.google-calendar {
+/****** Guests section ******/
+.guests {
   width: 60%;
   height: 100%;
   float: right;
 }
 
-.mc_embed_signup {
-  background: none;
+/****** Contact section ******/
+.signup-description {
+  position: absolute;
+  margin-top: 50px;
+  width: 100%;
   color: white;
+  text-align: center;
+}
+
+.email-input {
+  width: 300px;
+  height: 30px;
+  border-radius: 6px;
+
+  text-align: center;
+  color: black;
+
+  font-size: 20px;
+}
+
+.email-submit {
+  margin-top: 24px;
+  width: 60px;
+  height: 25px;
+  border-radius: 4px;
+  background-color: white;
+  border-color: black;
+  text-align: center;
+}
+
+.social-media-contact {
+  margin-top: 50px;
 }
