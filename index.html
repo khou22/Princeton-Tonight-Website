@@ -19,6 +19,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.3/react.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.3/JSXTransformer.js"></script>
 
+    <script src="email-submission.js"></script>
+
   </head>
   <body id="body">
     <header id="header">
@@ -82,9 +84,12 @@
     <div class="section" id="contact">
       <div class="signup-description">
         <h2>Join our mailing list to learn about upcoming events and video updates.</h2>
-        <input class="email-input" id="email-input" type="text" placeholder="Email"></input>
+        <form id="email-form" name="email-form" onsubmit="return submitEmail(false)">
+          <input class="email-input" type="text" name="email-input" id="email-input"
+                 placeholder="Email">
+        </form>
         <br>
-        <button class="email-submit">Sign up</button>
+        <button class="email-submit" id="#submitButton">Sign up</button>
         <div class="social-media-contact">
           <ul class="social-media-buttons">
             <li><a href="https://facebook.com/princetontonight" title="Share on Facebook" target="_blank"><img alt="Share on Facebook" src="assets/social-media/Facebook.png"></a></li>
