@@ -51,7 +51,7 @@ for index in range(0, len(videoBlocks)):
     # print(imgTag.get('src')) # Print
 
     # Video link
-    videoLinks.append("https://www.youtube.com/" + nameTag.get('href')) # Get video url
+    videoLinks.append("https://www.youtube.com" + nameTag.get('href')) # Get video url
 
     # print ""
 

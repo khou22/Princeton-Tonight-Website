@@ -3,10 +3,21 @@
 var PreviousVideos = React.createClass({
   render: function() {
     // console.log(videoData);
-    var numVideos = 5;
+
+    // Get video link for first video
+    var indicator = "?v="; // Indicate start of video id
+    var currentVideoUrl = videoData[0].url.substring(videoData[0].url.indexOf(indicator));
+    currentVideoUrl = currentVideoUrl.substring(indicator.length);
+
+    // Create embedded YouTube iframe
+    var currentVideo = '<iframe width="100%" height="100%" src="https://www.youtube.com/embed/' + currentVideoUrl + '" frameborder="0" allowfullscreen></iframe>'
+    document.getElementById('currentVideo').innerHTML = currentVideo; // Inject into page
+
+    var startAt = 1;
+    var numVideos = startAt + 5;
     var counter = 0; // Keep track of num videos
     var videoNodes = videoData.map(function(video) {
-      if (counter < numVideos) {
+      if (counter < numVideos && counter >= startAt) {
         counter++; // Add to counter
         return (
           <VideoBlock videoData={video} />
