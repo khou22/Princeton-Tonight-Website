@@ -40,7 +40,7 @@ videoBlocks = videoContainer[0].findAll("li", { "class" : "channels-content-item
 for index in range(0, len(videoBlocks)):
     # Video name
     nameTag = videoBlocks[index].findAll('a')[1] # Get tag with video name
-    title = nameTag['title'].encode("utf-8") # Video title
+    title = nameTag['title'].encode("utf-8").replace("\"", "'") # Video title
     videoNames.append(title) # Push to array
     # print(title) # Print
 

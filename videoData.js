@@ -1,6 +1,6 @@
 console.log('Loaded YouTube Videos');
-console.log('Last updated: 2016-12-01 21:56:15');
-var timestamp = '2016-12-01 21:56:15';
+console.log('Last updated: 2016-12-01 22:01:17');
+var timestamp = '2016-12-01 22:01:17';
 var videoCount = 0;
 var videoData = [
   {
@@ -36,7 +36,7 @@ var videoData = [
     "imgURL": "https://i.ytimg.com/vi/zWxHNIYxlUA/hqdefault.jpg?custom=true&w=196&h=110&stc=true&jpg444=true&jpgq=90&sp=68&sigh=9axK8xCYGTH0tP6yUtb8eKUG3r8",
   },
   {
-    "title": "Rob Cohen is "Milhouse" from The Simpsons",
+    "title": "Rob Cohen is 'Milhouse' from The Simpsons",
     "imgURL": "https://i.ytimg.com/vi/eP61JvWa8Kg/hqdefault.jpg?custom=true&w=196&h=110&stc=true&jpg444=true&jpgq=90&sp=68&sigh=5z0Liq5o2nq36AaAfIw7I9OYy7U",
   },
   {
@@ -84,7 +84,7 @@ var videoData = [
     "imgURL": "https://i.ytimg.com/vi/wtH6sCr0sog/hqdefault.jpg?custom=true&w=196&h=110&stc=true&jpg444=true&jpgq=90&sp=68&sigh=2Dog_IIganbx8CKS6gd6o4yXCtw",
   },
   {
-    "title": ""Blackbird" - Mike DelGuidice (Princeton Tonight)",
+    "title": "'Blackbird' - Mike DelGuidice (Princeton Tonight)",
     "imgURL": "https://i.ytimg.com/vi/tCk__GMHFIY/hqdefault.jpg?custom=true&w=196&h=110&stc=true&jpg444=true&jpgq=90&sp=68&sigh=WyNHJmczWkmRFNtyBsvleMkPB0E",
   },
 ]
