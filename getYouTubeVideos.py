@@ -19,6 +19,7 @@ fileName = "videoData.js"
 # Data to collect
 videoNames = [] # Names
 videoImages = [] # Image
+videoLinks = [] # Links
 
 try: # Make sure link exists
     urllib2.urlopen(channelURL)
@@ -48,6 +49,9 @@ for index in range(0, len(videoBlocks)):
     imgTag = videoBlocks[index].findAll('img')[0] # Get the img tag within div
     videoImages.append(imgTag.get('src')) # Get url of the image
     # print(imgTag.get('src')) # Print
+
+    # Video link
+    videoLinks.append("https://www.youtube.com/" + nameTag.get('href')) # Get video url
 
     # print ""
 
@@ -95,6 +99,7 @@ for index in range(0, len(videoNames)):
     outputFile.write(indentStr + "{\n")
     outputFile.write(indentStr + indentStr + "\"title\": \"" + videoNames[index] + "\",\n")
     outputFile.write(indentStr + indentStr + "\"imgURL\": \"" + videoImages[index] + "\",\n")
+    outputFile.write(indentStr + indentStr + "\"url\": \"" + videoLinks[index] + "\",\n")
     outputFile.write(indentStr + "},\n")
 outputFile.write("]\n") # Close JSON
 

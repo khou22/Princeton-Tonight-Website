@@ -16,7 +16,8 @@ var PreviousVideos = React.createClass({
         if (counter == numVideos + 1) { // Last slot links to YouTube channel
           var YouTubeChannel = {
             "title": "Princeton Tonight YouTube Channel",
-            "imgURL": "assets/images/youtube-icon.png"
+            "imgURL": "assets/images/youtube-icon.png",
+            "url": "https://www.youtube.com/channel/UCRVIKq9pzYzEE8arEE4H1LQ/videos"
           }
           return (
             <VideoBlock videoData={YouTubeChannel} />
@@ -56,7 +57,7 @@ var VideoBlock = React.createClass({
     var descriptionOpacity = this.state.hovering ? "description-hover" : "";
 
     return (
-      <a className="video-block-link" href={video.youTubeLink} target="_blank">
+      <a className="video-block-link" href={video.url} target="_blank">
         <div className="video-block"
           onMouseEnter={this.handleHoverOn.bind(this)}
           onMouseLeave={this.handleHoverOff.bind(this)}>
