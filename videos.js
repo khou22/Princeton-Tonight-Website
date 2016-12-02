@@ -3,10 +3,26 @@
 var PreviousVideos = React.createClass({
   render: function() {
     // console.log(videoData);
+    var numVideos = 5;
+    var counter = 0; // Keep track of num videos
     var videoNodes = videoData.map(function(video) {
-      return (
-        <VideoBlock videoData={video} />
-      )
+      if (counter < numVideos) {
+        counter++; // Add to counter
+        return (
+          <VideoBlock videoData={video} />
+        )
+      } else {
+        counter++
+        if (counter == numVideos + 1) { // Last slot links to YouTube channel
+          var YouTubeChannel = {
+            "title": "Princeton Tonight YouTube Channel",
+            "imgURL": "assets/images/youtube-icon.png"
+          }
+          return (
+            <VideoBlock videoData={YouTubeChannel} />
+          )
+        }
+      }
     });
     return (
       <div className="past-videos">
@@ -44,10 +60,10 @@ var VideoBlock = React.createClass({
         <div className="video-block"
           onMouseEnter={this.handleHoverOn.bind(this)}
           onMouseLeave={this.handleHoverOff.bind(this)}>
-          <img className={"video-thumbnail-img " + filter} src={video.thumbnailImage} alt="hello"/>
+          <img className={"video-thumbnail-img " + filter} src={video.imgURL} alt=""/>
           <div className="video-description-div">
             <p className={"video-description " + descriptionOpacity}>
-              {video.description}
+              {video.title}
             </p>
           </div>
         </div>
