@@ -1,15 +1,30 @@
 console.log('Loaded YouTube Videos');
-console.log('Last updated: 2016-12-01 22:31:51');
-var timestamp = '2016-12-01 22:31:51';
+console.log('Last updated: 2016-12-08 20:20:00');
+var timestamp = '2016-12-08 20:20:00';
 var videoCount = 0;
 var videoData = [
+  {
+    "title": "The (Thanksgiving) Talk | Princeton Tonight",
+    "imgURL": "https://i.ytimg.com/vi/V9DJbjCcJ3E/hqdefault.jpg?custom=true&w=196&h=110&stc=true&jpg444=true&jpgq=90&sp=68&sigh=GqtYFG452vyfnfKGQMJoDQ2PbQ8",
+    "url": "https://www.youtube.com/watch?v=V9DJbjCcJ3E",
+  },
+  {
+    "title": "Mike Houston (Lee Dixon, Orange is the New Black) || Princeton Tonight S02E02",
+    "imgURL": "https://i.ytimg.com/vi/0scBJO1xPWE/hqdefault.jpg?custom=true&w=196&h=110&stc=true&jpg444=true&jpgq=90&sp=68&sigh=k8FA7wmuyG1LuEygTzQfLQ70V9s",
+    "url": "https://www.youtube.com/watch?v=0scBJO1xPWE",
+  },
+  {
+    "title": "On the Street: Crazy Family Stories | Princeton Tonight",
+    "imgURL": "https://i.ytimg.com/vi/A__EEAPKTTg/hqdefault.jpg?custom=true&w=196&h=110&stc=true&jpg444=true&jpgq=90&sp=68&sigh=c1m0q-LIUGBDZGbNSrmOdvcbKTE",
+    "url": "https://www.youtube.com/watch?v=A__EEAPKTTg",
+  },
   {
     "title": "Gaby Moreno - Entrevista en Español por Princeton Tonight",
     "imgURL": "https://i.ytimg.com/vi/GRNHCLwN-yU/hqdefault.jpg?custom=true&w=196&h=110&stc=true&jpg444=true&jpgq=90&sp=68&sigh=cvHIkhYu8U-BjrCuS4A0EipQlU4",
     "url": "https://www.youtube.com/watch?v=GRNHCLwN-yU",
   },
   {
-    "title": "Season 2 Premiere - Princeton Tonight",
+    "title": "Season 2 Premiere: Gaby Moreno || Princeton Tonight S02E01",
     "imgURL": "https://i.ytimg.com/vi/g912gpkct1o/hqdefault.jpg?custom=true&w=196&h=110&stc=true&jpg444=true&jpgq=90&sp=68&sigh=TGn8TE97RHhwNK-WHFOLdx92w58",
     "url": "https://www.youtube.com/watch?v=g912gpkct1o",
   },
