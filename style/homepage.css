@@ -203,7 +203,7 @@ body {
 }
 
 .email-input {
-  width: 300px;
+  width: 400px;
   height: 30px;
   border-radius: 6px;
 
@@ -215,12 +215,15 @@ body {
 
 .email-submit {
   margin-top: 24px;
-  width: 60px;
-  height: 25px;
+  width: 220px;
+  height: 40px;
   border-radius: 4px;
   background-color: white;
   border-color: black;
   text-align: center;
+
+  font-family: defaultFont;
+  font-size: 18px;
 }
 
 .social-media-contact {
