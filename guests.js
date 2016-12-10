@@ -1,10 +1,25 @@
 var Guests = React.createClass({
+  getInitialState: function() {
+    return {
+      index: 0
+    }
+  },
+  updateSelected: function(index) {
+    // Update which guest was selected
+    this.setState({
+      index: index
+    })
+  },
   render: function() {
-    var max = 4; // max 4 guests listed
-    var index = 0;
+    var max = 10; // max 4 guests listed
+    var currentGuest = guestData[this.state.index];
     return (
       <div className="guests">
-        <GuestList guestData={guestData} numGuests={max} />
+        <div className="guest-focus">
+          <h2 className="guest-name">{currentGuest.name}</h2>
+          <p className="guest-description">{currentGuest.description}</p>
+        </div>
+        <GuestList guestData={guestData} numGuests={max} update={this.updateSelected}/>
       </div>
     )
   }
@@ -17,17 +32,24 @@ var GuestList = React.createClass({
       if (index < this.props.numGuests) {
         index++; // Counter
         return (
-          <div className="guest-listing">
-            <h3 className="guest-name">{guest.name}</h3>
-            <p className="guest-description">{guest.description}</p>
-          </div>
+          <td className="guest-item">
+            <a onMouseOver={this.props.update.bind(this, index - 1)} className="guest-name">{guest.name}</a>
+          </td>
         )
       }
     }.bind(this)) // Closure
 
     return (
-      <div class="guest-list">
-        {listNodes}
+      <div className="guest-list">
+        <table>
+          <tr width="100%">
+            {listNodes}
+          </tr>
+        </table>
+        <p className="guest-instructions">
+          And many more!<br/><br/>
+          Hover over a name to learn more
+        </p>
       </div>
     )
   }
