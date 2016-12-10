@@ -37,4 +37,9 @@ header li {
   header ul {
     padding-left: 0px;
   }
+
+  .header-icon {
+    margin-bottom: 0px;
+    margin-right: 1rem;
+  }
 }

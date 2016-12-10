@@ -233,9 +233,10 @@ body {
 
 /****** Guests section ******/
 .guests {
-  width: 60%;
+  margin-left: 10%;
+  width: 80%;
   height: 100%;
-  float: right;
+  color: white;
 }
 
 /****** Contact section ******/
