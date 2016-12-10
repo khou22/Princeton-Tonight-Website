@@ -106,10 +106,41 @@ body {
   margin: 1.5%;
 }
 
+/*Don't show channel link on desktop*/
+.channel-link {
+  display: none;
+}
+
 @media(max-width: 800px) {
-  .video-block {
-    width: 90%;
-    margin: 5%;
+  /*Current video full*/
+  .current-video {
+    width: 100%;
+    height: 80%;
+  }
+
+  /*Past videos stacked*/
+  .past-videos {
+    display: none;
+  }
+
+  /*Show channel link*/
+  .channel-link {
+    display: block;
+    width: 100%;
+    height: 15%;
+  }
+
+  .channel-button {
+    color: #e52d27;
+    width: 70%;
+    margin-left: 15%;
+
+    /*YouTube link*/
+    border: 1px solid #e52d27;
+    border-radius: 12px;
+    height: 36px;
+    font-family: defaultFont;
+    background: none;
   }
 }
 
