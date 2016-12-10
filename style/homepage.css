@@ -79,6 +79,20 @@ body {
   margin: 24px;
 }
 
+@media(max-width: 800px) {
+  .about-image {
+    display: none;
+  }
+
+  .about-text {
+    width: 100%;
+  }
+
+  .about-text p {
+    font-size: 2.3vmax;
+  }
+}
+
 /****** Video section ******/
 .current-video {
   width: 40%;
