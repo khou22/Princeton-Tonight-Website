@@ -301,8 +301,6 @@ body {
 
 /****** Contact section ******/
 .signup-description {
-  position: absolute;
-  margin-top: 50px;
   width: 100%;
   color: white;
   text-align: center;
@@ -324,7 +322,7 @@ body {
   width: 25% !important;
   margin-left: 37.5% !important;
   height: 40px;
-  
+
   border-radius: 4px;
   background-color: white;
   border-color: black;
