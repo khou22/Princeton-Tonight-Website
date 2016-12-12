@@ -2,15 +2,22 @@
 
 var PreviousVideos = React.createClass({
   render: function() {
-    // console.log(videoData);
+    var totalVideos = 6; // Videos listed
 
-    // Get video link for first video
+    // Get video link for featured video
+    var featIndex = Math.round(Math.random() * (totalVideos - 1)); // Random index
+    console.log("Featured index:", featIndex);
     var indicator = "?v="; // Indicate start of video id
-    var currentVideoUrl = videoData[0].url.substring(videoData[0].url.indexOf(indicator));
-    currentVideoUrl = currentVideoUrl.substring(indicator.length);
+    var featuredVideoURL = videoData[featIndex].url.substring(videoData[0].url.indexOf(indicator));
+    featuredVideoURL = featuredVideoURL.substring(indicator.length);
+
+    // Remove featured from list and shift other videos down
+    for (var i = featIndex; i > 0; i += -1) {
+      videoData[i] = videoData[i - 1]; // Move the first video
+    }
 
     // Create embedded YouTube iframe
-    var currentVideo = '<iframe width="100%" height="100%" src="https://www.youtube.com/embed/' + currentVideoUrl + '" frameborder="0" allowfullscreen></iframe>'
+    var currentVideo = '<iframe width="100%" height="100%" src="https://www.youtube.com/embed/' + featuredVideoURL + '" frameborder="0" allowfullscreen></iframe>'
     document.getElementById('currentVideo').innerHTML = currentVideo; // Inject into page
 
     var startAt = 1;
@@ -26,7 +33,7 @@ var PreviousVideos = React.createClass({
         counter++
         if (counter == numVideos + 1) { // Last slot links to YouTube channel
           var YouTubeChannel = {
-            "title": "Princeton Tonight YouTube Channel",
+            "title": "More Videos",
             "imgURL": "assets/images/youtube-icon.png",
             "url": "https://www.youtube.com/channel/UCRVIKq9pzYzEE8arEE4H1LQ/videos"
           }
