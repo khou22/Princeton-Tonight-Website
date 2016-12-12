@@ -309,8 +309,9 @@ body {
 }
 
 .email-input {
-  width: 400px;
-  height: 30px;
+  width: 60% !important;
+  margin-left: 20%;
+  height: 30px !important;
   border-radius: 6px;
 
   text-align: center;
@@ -320,9 +321,10 @@ body {
 }
 
 .email-submit {
-  margin-top: 24px;
-  width: 220px;
+  width: 25% !important;
+  margin-left: 37.5% !important;
   height: 40px;
+  
   border-radius: 4px;
   background-color: white;
   border-color: black;
