@@ -255,17 +255,17 @@ body {
 
 .guest-image {
   float: left;
-  width: 135px;
+  width: 175px;
   height: 135px;
 
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .guest-description {
   float: right;
-  width: calc(95% - 135px);;
+  width: calc(98% - 175px);;
   text-align: left;
   font-size: 1.1vmax;
 }

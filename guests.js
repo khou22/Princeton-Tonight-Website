@@ -15,7 +15,8 @@ var Guests = React.createClass({
     if ($(window).width() >= 800) { // Desktop
       var max = 10; // max 4 guests listed
       var currentGuest = guestData[this.state.index];
-      var guestImage = { backgroundImage: "url(" + currentGuest.image + ")" };
+      var image = guestData[this.state.index].image;
+      var guestImage = { backgroundImage: image };
       return (
         <div className="guests">
           <div className="guest-focus">
