@@ -15,11 +15,15 @@ var Guests = React.createClass({
     if ($(window).width() >= 800) { // Desktop
       var max = 10; // max 4 guests listed
       var currentGuest = guestData[this.state.index];
+      var guestImage = { backgroundImage: "url(" + currentGuest.image + ")" };
       return (
         <div className="guests">
           <div className="guest-focus">
             <h2 className="guest-name">{currentGuest.name}</h2>
-            <p className="guest-description">{currentGuest.description}</p>
+            <div className="guest-data">
+              <div className="guest-image" style={guestImage}></div>
+              <p className="guest-description">{currentGuest.description}</p>
+            </div>
           </div>
           <GuestList guestData={guestData} numGuests={max} update={this.updateSelected}/>
         </div>
