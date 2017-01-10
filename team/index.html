@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Princeton Tonight Team</title>
+    <link rel="stylesheet" type="text/css" href="../style/header.css">
+    <link rel="stylesheet" type="text/css" href="../style/homepage.css">
+    <link rel="stylesheet" type="text/css" href="../style/sections.css">
+    <link rel="stylesheet" type="text/css" href="../style/socialMedia.css">
+    <link rel="stylesheet" type="text/css" href="../style/fonts.css">
+
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <script src="../videoData.js"></script>
+    <script src="../guestData.js"></script>
+    <script src="teamData.js"></script>
+    <script src="../header.js"></script>
+
+    <!-- React -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.3/react.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.3/JSXTransformer.js"></script>
+  </head>
+  <body id="body">
+    <header id="header">
+      <ul>
+        <li class="header-link-divider">
+          <a onclick="scrollTo('#videos')" class="header-link"><img class="header-icon" src="assets/icons/video-icon.png">VIDEOS</a>
+        </li>
+        <li class="header-link-divider">
+          <a onclick="scrollTo('#about')" class="header-link"><img class="header-icon" src="assets/icons/home-icon.png">ABOUT</a>
+        </li>
+        <li class="header-link-divider">
+          <a onclick="scrollTo('#guests')" class="header-link"><img class="header-icon" src="assets/icons/events-icon.png">GUESTS</a>
+        </li>
+        <li class="header-link-divider">
+          <a onclick="scrollTo('#contact')" class="header-link"><img class="header-icon" src="assets/icons/contact-icon.png">CONTACT</a>
+        </li>
+      </ul>
+    </header>
+
+  </body>
+</html>
