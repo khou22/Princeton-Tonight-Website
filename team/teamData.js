@@ -1,7 +1,7 @@
 var teamBios = [
   {
-    "name": "Jordan Salama",
-    "bio": "Jordan Salama (showrunner and host) is a freshman from Pelham, NY, where he created the talk show The Pelican Brief with Jordan Salama. He’s interested in comedy writing and TV production, and has worked on shows including Inside Amy Schumer and Neon Joe: Werewolf Hunter. A soccer player and fanatic, he is the single biggest Argentina fan you will meet outside of that country."
+    "name": "Jordan Salama (showrunner and host)",
+    "bio": "Jordan Salama is a freshman from Pelham, NY, where he created the talk show The Pelican Brief with Jordan Salama. He’s interested in comedy writing and TV production, and has worked on shows including Inside Amy Schumer and Neon Joe: Werewolf Hunter. A soccer player and fanatic, he is the single biggest Argentina fan you will meet outside of that country."
   },
   {
     "name": "Ryan Ozminkowski (executive producer)",
