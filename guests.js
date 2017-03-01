@@ -1,5 +1,11 @@
 var Guests = React.createClass({
   getInitialState: function() {
+    // Preload guest images
+    for (var i = 0; i < guestData.length; i++) {
+      var bufferImage = new Image(); // Create image object
+      bufferImage.src = guestData[i].image; // Load image
+    }
+
     return {
       index: 0
     }
