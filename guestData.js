@@ -1,7 +1,7 @@
 var guestData = [
   {
     "name": "Art Garfunkel",
-    "description": "Coming Tuesday, December 13th at 4:30pm in Richardson Auditorium! Ticketing information available now at www.princeton.edu/odus",
+    "description": "\"Art Garfunkel sang, conversed and delighted during a performance at at Princeton University. Garfunkel, accompanied by guitarist Tab Laven, performed at a sold-out show to about 900 at Richardson auditorium Tuesday. After performing songs from both the Simon and Garfunkel catalog and his solo career, the famed singer answered questions with detailed, often deeply personal answers.\" (NJ.com)",
     "image": "url(http://a1.files.biography.com/image/upload/c_fill,cs_srgb,dpr_1.0,g_face,h_300,q_80,w_300/MTE1ODA0OTcxOTI2OTgwMTA5.jpg)"
   },
   {
