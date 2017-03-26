@@ -1,0 +1,352 @@
+body {
+  margin: 0 !important;
+  overflow-x: hidden;
+  background-color: black;
+}
+
+.landing-section {
+  width: 100vw;
+  height: 100vh;
+  overflow-y: hidden;
+
+  background-image: url(../assets/images/long-exposure-of-city-street.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.landing-logo {
+  position: absolute;
+  width: 60%;
+  margin-left: 20%;
+  top: 17%;
+  transform: translateY(50%);
+  z-index: 1;
+}
+
+@media(max-width: 800px) {
+  .landing-logo {
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 100px;
+  }
+}
+
+.landing-video {
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+}
+
+@media(max-width: 800px) {
+  .landing-video {
+    /*margin-left: -25%;*/
+  }
+}
+
+.section-header {
+  font-size: 3vmax;
+  color: white;
+  margin-left: 24px;
+  margin-top: 12px;
+}
+
+/****** About section ******/
+.about-image {
+  float: left;
+  width: 600px;
+  height: 100%;
+
+  background-image: url(../assets/images/about-image.jpg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.about-text {
+  float: right;
+  width: calc(100% - 600px);
+  height: 100%;
+}
+
+.about-text p {
+  text-align: left;
+  color: white;
+  margin: 24px;
+  font-size: 1.4vmax;
+}
+
+.social-media {
+  margin: 24px;
+}
+
+@media(max-width: 800px) {
+  .about-image {
+    display: none;
+  }
+
+  .about-text {
+    width: 100%;
+  }
+
+  .about-text p {
+    font-size: 2.3vmax;
+  }
+}
+
+/****** Video section ******/
+.current-video {
+  width: 40%;
+  float: left;
+  height: 100%;
+}
+
+.past-videos {
+  width: 60%;
+  float: right;
+  height: 100%;
+}
+
+.video-grid {
+  width: 100%;
+}
+
+.video-block {
+  display: inline-block;
+  border: 1px solid gray;
+  position: relative;
+
+  /*Width of each video block*/
+  width: 30%;
+  margin: 1.5%;
+}
+
+/*Don't show channel link on desktop*/
+.channel-link {
+  display: none;
+}
+
+@media(max-width: 800px) {
+  /*Current video full*/
+  .current-video {
+    width: 100%;
+    height: 80%;
+  }
+
+  /*Past videos stacked*/
+  .past-videos {
+    display: none;
+  }
+
+  /*Show channel link*/
+  .channel-link {
+    display: block;
+    width: 100%;
+    height: 15%;
+  }
+
+  .channel-button {
+    color: #e52d27;
+    width: 70%;
+    margin-left: 15%;
+
+    /*YouTube link*/
+    border: 1px solid #e52d27;
+    border-radius: 12px;
+    height: 36px;
+    font-family: defaultFont;
+    background: none;
+  }
+}
+
+.video-thumbnail-img {
+  width: 100%;
+}
+
+.video-description {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+}
+
+.video-description {
+  /*Sizing*/
+  width: 90%;
+  height: 80%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+
+  /*Font styling*/
+  font-size: 16px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  opacity: 0;
+}
+
+.description-hover {
+  opacity: 1;
+  -webkit-animation: fadeIn 500ms 1;
+}
+
+.video-fade {
+  -webkit-filter: brightness(40%) blur(6px);
+  filter: brightness(40%) blur(6px);
+
+  -webkit-animation: videoFilter 500ms 1;
+  animation: videoFilter 500ms 1;
+}
+
+@-webkit-keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@-webkit-keyframes videoFilter {
+  from {
+    -webkit-filter: none;
+    filter: none;
+  }
+  to {
+    -webkit-filter: brightness(40%) blur(6px);
+    filter: brightness(40%) blur(6px);
+  }
+}
+
+@keyframes videoFilter {
+  from {
+    -webkit-filter: none;
+    filter: none;
+  }
+  to {
+    -webkit-filter: brightness(40%) blur(6px);
+    filter: brightness(40%) blur(6px);
+  }
+}
+
+/****** Guests section ******/
+.guests {
+  width: 100%;
+  height: 100%;
+  color: white;
+}
+
+.guest-focus {
+  width: 90%;
+  margin-left: 5%;
+}
+
+.guest-name {
+  width: 100%;
+  text-align: center;
+}
+
+.guest-data {
+  width: 100%;
+}
+
+.guest-image {
+  float: left;
+  width: 175px;
+  height: 135px;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.guest-description {
+  float: right;
+  width: calc(98% - 175px);;
+  text-align: left;
+  font-size: 1.1vmax;
+}
+
+.guest-list {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.guest-item {
+  width: 6%;
+  margin-left: 2%;
+  margin-right: 2%;
+  text-align: center;
+}
+
+.guest-instructions {
+  width: 100%;
+  text-align: center;
+}
+
+
+/*Lineup style guest list (for mobile)*/
+.guests-lineup-style {
+  margin: auto;
+  width: 90%;
+}
+
+.lineup-header {
+  font-size: 3vmax;
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+
+.lineup {
+  color: white;
+  font-size: 2.2vmax;
+  text-align: center;
+  line-height: 40px;
+}
+
+.guest-space {
+  /*Invisible spacer*/
+  opacity: 0;
+}
+
+/****** Contact section ******/
+.signup-description {
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+
+.email-input {
+  width: 60% !important;
+  margin-left: 20%;
+  height: 30px !important;
+  border-radius: 6px;
+
+  text-align: center;
+  color: black;
+
+  font-size: 20px;
+}
+
+.email-submit {
+  width: 25% !important;
+  margin-left: 37.5% !important;
+  height: 40px;
+
+  border-radius: 4px;
+  background-color: white;
+  border-color: black;
+  text-align: center;
+
+  font-family: defaultFont;
+  font-size: 18px;
+}
+
+.social-media-contact {
+  margin-top: 50px;
+}
