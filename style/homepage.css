@@ -1,8 +1,4 @@
-body {
-  margin: 0 !important;
-  overflow-x: hidden;
-  background-color: black;
-}
+/* TODO: move the contents of this stylesheet to home.scss */
 
 .landing-section {
   width: 100vw;

@@ -1,0 +1,12 @@
+/*Override all other declarations that Jekyll imported*/
+@font-face {
+   font-family: defaultFont;
+   src: url(../assets/fonts/RegencieLight.ttf);
+}
+
+h1, h2, h3, h4, h5, h6, ol, ul, li, span {
+    font-family: defaultFont;
+}
+p, div {
+    font-family: defaultFont;
+}
