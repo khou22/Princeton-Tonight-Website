@@ -399,9 +399,8 @@ pre {
   background-image: url("./../assets/images/Header_Image.png"); }
 
 .site-title {
-  height: 100px;
-  letter-spacing: -1px;
-  margin-bottom: 0;
+  height: 96px;
+  margin-top: 2px;
   float: left; }
   .site-title, .site-title:visited {
     color: #424242; }
@@ -427,6 +426,10 @@ pre {
     width: -webkit-calc((100% / 8) - 6px);
     color: #FFFFFF;
     line-height: 1.5; }
+    .site-nav .page-link a {
+      display: inline-block;
+      width: 100%;
+      text-align: center; }
   @media screen and (max-width: 600px) {
     .site-nav {
       position: absolute;

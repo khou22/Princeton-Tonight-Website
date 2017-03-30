@@ -18,9 +18,8 @@ $nav-height: 46px; // Height of links row of header
 }
 
 .site-title {
-  height: 100px; // Logo height
-  letter-spacing: -1px;
-  margin-bottom: 0;
+  height: 96px; // Logo height
+  margin-top: 2px;
   float: left;
 
   &,
@@ -65,6 +64,9 @@ $nav-height: 46px; // Height of links row of header
 
     a {
       // Page Links
+      display: inline-block;
+      width: 100%;
+      text-align: center;
     }
   }
 
