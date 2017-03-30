@@ -392,11 +392,15 @@ pre {
  * Site header
  */
 .site-header {
+  position: fixed;
   border-top: 5px solid #424242;
   border-bottom: 1px solid #e8e8e8;
   min-height: 150px;
-  position: relative;
   background-image: url("./../assets/images/Header_Image.png"); }
+  .site-header-placeholder {
+    position: relative;
+    min-height: 150px;
+    width: 100%; }
 
 .site-title {
   height: 96px;
