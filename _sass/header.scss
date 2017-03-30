@@ -1,0 +1,114 @@
+/**
+ * Site header
+ */
+
+// Variables
+$nav-height: 46px; // Height of links row of header
+
+.site-header {
+  border-top: 5px solid $grey-color-dark;
+  border-bottom: 1px solid $grey-color-light;
+  min-height: 150px;
+
+  // Positioning context for the mobile navigation icon
+  position: relative;
+
+  // Background Image
+  background-image: url("./../assets/images/Header_Image.png");
+}
+
+.site-title {
+  height: 100px; // Logo height
+  letter-spacing: -1px;
+  margin-bottom: 0;
+  float: left;
+
+  &,
+  &:visited {
+    color: $grey-color-dark;
+  }
+}
+
+.site-nav {
+  // Stretch across entire header
+  width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
+  width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
+
+  // Position at the bottom of the navigation header
+  position: absolute;
+  bottom: 0;
+
+  line-height: $nav-height;
+
+  &-background {
+    // Position in same place as links
+    width: 100vw;
+    position: absolute;
+    bottom: 0;
+    height: $nav-height; // Set as same height as links
+    background-color: rgba(0, 0, 0, 0.6); // Semi Transparent
+
+    position: absolute;
+    bottom: 0;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+
+  .page-link {
+    display: inline-block;
+    width: -webkit-calc((100% / 8) - 6px);
+
+    color: $text-color;
+    line-height: $base-line-height;
+
+    a {
+      // Page Links
+    }
+  }
+
+  @include media-query($on-palm) {
+    position: absolute;
+    top: 9px;
+    right: 30px;
+    background-color: $background-color;
+    border: 1px solid $grey-color-light;
+    border-radius: 5px;
+    text-align: right;
+
+    .menu-icon {
+      display: block;
+      float: right;
+      width: 36px;
+      height: 26px;
+      line-height: 0;
+      padding-top: 10px;
+      text-align: center;
+
+      > svg {
+        width: 18px;
+        height: 15px;
+
+        path {
+          fill: $grey-color-dark;
+        }
+      }
+    }
+
+    .trigger {
+      clear: both;
+      display: none;
+    }
+
+    &:hover .trigger {
+      display: block;
+      padding-bottom: 5px;
+    }
+
+    .page-link {
+      display: block;
+      padding: 5px 10px;
+    }
+  }
+}
