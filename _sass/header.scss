@@ -7,6 +7,7 @@ $nav-height: 46px; // Height of links row of header
 
 .site-header {
   position: fixed; // Always at top of page
+  width: 100%;
 
   border-top: 5px solid $grey-color-dark;
   border-bottom: 1px solid $grey-color-light;
@@ -20,6 +21,7 @@ $nav-height: 46px; // Height of links row of header
     position: relative; // Push main content down
     min-height: 150px; // Same height as site header
     width: 100%; // Fill entire width
+    z-index: -1; // Beind everything else
   }
 }
 
@@ -118,5 +120,15 @@ $nav-height: 46px; // Height of links row of header
       display: block;
       padding: 5px 10px;
     }
+  }
+}
+
+.header-social-media {
+  float: right;
+  margin-top: 12px;
+
+  &-link {
+    width: 40px;
+    height: 40px;
   }
 }
