@@ -474,6 +474,11 @@ pre {
   .header-social-media-link {
     width: 40px;
     height: 40px; }
+  .header-social-media ul {
+    list-style: none;
+    padding: 0; }
+    .header-social-media ul li {
+      display: inline; }
 
 body {
   margin: 0 !important;

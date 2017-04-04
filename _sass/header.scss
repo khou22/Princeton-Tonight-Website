@@ -131,4 +131,13 @@ $nav-height: 46px; // Height of links row of header
     width: 40px;
     height: 40px;
   }
+
+  ul {
+    list-style: none;
+    padding: 0;
+
+    li {
+      display: inline;
+    }
+  }
 }
