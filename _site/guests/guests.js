@@ -1,5 +1,5 @@
 var gridData = {
-  columns: 4,
+  columns: 3,
   textColor: "white",
   openNewWindow: false,
   data: []
@@ -16,7 +16,7 @@ for (var i = 0; i < guestData.length; i++) {
     description: currentGuest.description,
     image: currentGuest.image,
     link: "#",
-    size: "2",
+    size: "1",
     category: {
       label: "Guests",
       color: "orange"
