@@ -397,6 +397,7 @@ pre {
   border-top: 5px solid #424242;
   border-bottom: 1px solid #e8e8e8;
   min-height: 150px;
+  z-index: 2;
   background-image: url("./../assets/images/Header_Image.png"); }
   .site-header-placeholder {
     position: relative;

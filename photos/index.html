@@ -2,22 +2,15 @@
 layout: default
 ---
 
-<div class="home">
+<div class="guest-wrapper">
 
-  <h1 class="page-heading">Posts</h1>
+  <h1 class="page-heading">Photos</h1>
+  <p>Photos from past events.</p>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+  <script type="text/jsx;harmoney-true" src="guestData.js"></script>
+  <script type="text/jsx;harmoney-true" src="guests.js"></script>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+  <div id="grid"></div>
+  <script type="text/jsx;harmoney-true" src="../../libraries/tile-layout-library/main.js"></script>
 
 </div>
