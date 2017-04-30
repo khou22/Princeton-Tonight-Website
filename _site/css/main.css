@@ -200,6 +200,9 @@ pre {
 .page-content {
   padding: 30px 0; }
 
+.page-content-full {
+  padding: none; }
+
 .page-heading {
   font-size: 20px; }
 
@@ -485,3 +488,15 @@ body {
   margin: 0 !important;
   overflow-x: hidden;
   background-color: black; }
+
+/* TODO: move the contents of this stylesheet to home.scss */
+.landing-section {
+  width: 100vw;
+  height: -webkit-calc(100vh - 150px);
+  height: calc(100vh - 150px);
+  overflow-y: hidden;
+  background-image: url(../assets/images/long-exposure-of-city-street.jpg);
+  background-size: cover;
+  background-repeat: no-repeat; }
+.landing-video {
+  width: 100%; }

@@ -4,6 +4,7 @@
 
 // Variables
 $nav-height: 46px; // Height of links row of header
+$site-header-height: 150px; // Height of header
 
 .site-header {
   position: fixed; // Always at top of page
@@ -11,7 +12,7 @@ $nav-height: 46px; // Height of links row of header
 
   border-top: 5px solid $grey-color-dark;
   border-bottom: 1px solid $grey-color-light;
-  min-height: 150px;
+  min-height: $site-header-height;
 
   z-index: 2; // Put above other elements
 
