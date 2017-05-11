@@ -1,0 +1,10 @@
+.site-footer {
+  background-image: url(./../assets/images/studio.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  // Filter
+  -webkit-filter: grayscale(0.5);
+  filter: grayscale(0.5);
+}
