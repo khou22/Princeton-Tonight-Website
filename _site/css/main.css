@@ -520,6 +520,12 @@ body {
   top: 20%;
   width: 70%;
   left: 15%; }
+.landing-quick-info-section {
+  margin-top: 16px;
+  margin-bottom: 16px; }
+  .landing-quick-info-section-content {
+    width: 100%;
+    padding: 24px; }
 .landing-quick-title {
   width: 100%;
   text-align: center; }
@@ -527,6 +533,9 @@ body {
 .third-col {
   width: 33%;
   display: inline-block; }
+
+.border-right {
+  border-right: 1px solid white; }
 
 .image-divider {
   position: relative;

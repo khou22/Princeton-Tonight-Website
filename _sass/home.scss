@@ -32,7 +32,13 @@ body {
   }
 
   &-quick-info-section {
+    margin-top: 16px;
+    margin-bottom: 16px;
 
+    &-content {
+      width: 100%;
+      padding: 24px;
+    }
   }
 
   &-quick-title {
@@ -44,6 +50,10 @@ body {
 .third-col {
   width: 33%;
   display: inline-block;
+}
+
+.border-right {
+  border-right: 1px solid white;
 }
 
 .image-divider {
