@@ -69,7 +69,7 @@ task :post do
     post.puts 'author: "Kevin Hou"'
     post.puts "date: #{dateTime}"
     post.puts 'description: ""'
-    post.puts 'link: "https://www.princetontonight.com"'
+    post.puts 'link: null'
     post.puts "featured: \"no\""
     post.puts "---"
     # post.puts "{% include JB/setup %}"
