@@ -92,7 +92,6 @@ outputFile.write(createConsoleLog("Last updated: " + timestamp)) # Add time stam
 outputFile.write(createJavascriptVar('timestamp', timestamp, 'string')) # Create JS variable for timestamp
 outputFile.write(createJavascriptVar('videoCount', 0, 'int')) # Create JS variable for video count
 
-# Write airport data into json
 indentStr = "  " # Indent placeholder
 outputFile.write("var videoData = [\n") # Open array
 for index in range(0, len(videoNames)):
