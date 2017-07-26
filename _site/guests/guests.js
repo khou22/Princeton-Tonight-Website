@@ -12,7 +12,7 @@ for (var i = 0; i < guestData.length; i++) {
 
   var gridItem = {
     title: currentGuest.name,
-    subtitle: currentGuest.subtitle,
+    subtitle: currentGuest.subtitle ? currentGuest.subtitle : '',
     description: currentGuest.description,
     image: currentGuest.image,
     link: "#",
