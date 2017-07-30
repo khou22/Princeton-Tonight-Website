@@ -524,7 +524,9 @@ body {
   background-size: cover;
   background-repeat: no-repeat; }
 .landing-video {
-  width: 100%; }
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }
 .landing-logo {
   position: absolute;
   top: 20%;
