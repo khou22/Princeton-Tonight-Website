@@ -4,19 +4,30 @@
     <title>Princeton Tonight</title>
     <description>Princeton Tonight is Princeton University’s first and only broadcast television show! Check out our latest episode featuring Full House comedian Dave Coulier and musical guest Lawrence on YouTube as well as cable TV throughout central NJ!
 </description>
-    <link>http://yourdomain.com/</link>
-    <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 30 Jul 2017 00:51:47 -0400</pubDate>
-    <lastBuildDate>Sun, 30 Jul 2017 00:51:47 -0400</lastBuildDate>
-    <generator>Jekyll v2.5.3</generator>
+    <link>http://localhost:8000/</link>
+    <atom:link href="http://localhost:8000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Wed, 02 Aug 2017 01:03:55 -0400</pubDate>
+    <lastBuildDate>Wed, 02 Aug 2017 01:03:55 -0400</lastBuildDate>
+    <generator>Jekyll v3.5.1</generator>
+    
+      <item>
+        <title>This is a test post</title>
+        <description>&lt;p&gt;I’m testing out &lt;strong&gt;Jekyll-Admin’s&lt;/strong&gt; CRM-style UI with this blog post…&lt;/p&gt;
+</description>
+        <pubDate>Wed, 02 Aug 2017 01:00:00 -0400</pubDate>
+        <link>http://localhost:8000/2017/08/02/this-is-a-test-post.html</link>
+        <guid isPermaLink="true">http://localhost:8000/2017/08/02/this-is-a-test-post.html</guid>
+        
+        
+      </item>
     
       <item>
         <title>Student produced show Princeton Tonight to debut in February</title>
         <description>
 </description>
         <pubDate>Sat, 01 Jul 2017 10:11:01 -0400</pubDate>
-        <link>http://yourdomain.com/2017/07/01/student-produced-show-princeton-tonight-to-debut-in-february.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/2017/07/01/student-produced-show-princeton-tonight-to-debut-in-february.html</guid>
+        <link>http://localhost:8000/2017/07/01/student-produced-show-princeton-tonight-to-debut-in-february.html</link>
+        <guid isPermaLink="true">http://localhost:8000/2017/07/01/student-produced-show-princeton-tonight-to-debut-in-february.html</guid>
         
         
       </item>
@@ -26,8 +37,8 @@
         <description>
 </description>
         <pubDate>Sat, 01 Jul 2017 10:10:31 -0400</pubDate>
-        <link>http://yourdomain.com/2017/07/01/qa-with-jordan-salama-ryan-ozminkowski-and-benjamin-jacobson-of-princeton-tonight.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/2017/07/01/qa-with-jordan-salama-ryan-ozminkowski-and-benjamin-jacobson-of-princeton-tonight.html</guid>
+        <link>http://localhost:8000/2017/07/01/qa-with-jordan-salama-ryan-ozminkowski-and-benjamin-jacobson-of-princeton-tonight.html</link>
+        <guid isPermaLink="true">http://localhost:8000/2017/07/01/qa-with-jordan-salama-ryan-ozminkowski-and-benjamin-jacobson-of-princeton-tonight.html</guid>
         
         
       </item>
@@ -37,19 +48,19 @@
         <description>
 </description>
         <pubDate>Sat, 01 Jul 2017 10:09:34 -0400</pubDate>
-        <link>http://yourdomain.com/2017/07/01/21-questions-with-princeton-tonight-host-jordan-salama.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/2017/07/01/21-questions-with-princeton-tonight-host-jordan-salama.html</guid>
+        <link>http://localhost:8000/2017/07/01/21-questions-with-princeton-tonight-host-jordan-salama.html</link>
+        <guid isPermaLink="true">http://localhost:8000/2017/07/01/21-questions-with-princeton-tonight-host-jordan-salama.html</guid>
         
         
       </item>
     
       <item>
-        <title>It&#39;s show time: Student produced &#39;Princeton Tonight&#39; to premiere on local TV</title>
+        <title>It's show time: Student produced 'Princeton Tonight' to premiere on local TV</title>
         <description>
 </description>
         <pubDate>Sat, 01 Jul 2017 10:08:29 -0400</pubDate>
-        <link>http://yourdomain.com/2017/07/01/its-show-time-student-produced-princeton-tonight-to-premiere-on-local-tv.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/2017/07/01/its-show-time-student-produced-princeton-tonight-to-premiere-on-local-tv.html</guid>
+        <link>http://localhost:8000/2017/07/01/its-show-time-student-produced-princeton-tonight-to-premiere-on-local-tv.html</link>
+        <guid isPermaLink="true">http://localhost:8000/2017/07/01/its-show-time-student-produced-princeton-tonight-to-premiere-on-local-tv.html</guid>
         
         
       </item>
