@@ -402,6 +402,12 @@ pre {
   .highlight .il {
     color: #099; }
 
+.about-history br {
+  display: block;
+  margin: 30px;
+  line-height: 30px;
+  content: ""; }
+
 .film-festival-container {
   width: 100%;
   margin-top: 10%;
