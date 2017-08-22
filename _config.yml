@@ -1,13 +1,13 @@
 # Site settings
 title: Princeton Tonight
-email: princetontonight@domain.com
+email: tonight@princeton.edu
 description: > # this means to ignore newlines until "baseurl:"
   Princeton Tonight is Princeton University’s first and only broadcast
   television show! Check out our latest episode featuring Full House
   comedian Dave Coulier and musical guest Lawrence on YouTube as well as
   cable TV throughout central NJ!
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://yourdomain.com" # the base hostname & protocol for your site
+url: "http://princetontonight.com" # the base hostname & protocol for your site
 twitter_username: princetontonight
 facebook_username: PrincetonTonight
 

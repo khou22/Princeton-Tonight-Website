@@ -27,7 +27,28 @@ layout: fullscreen
   <div class="third-col">
     <h1 class="landing-quick-title">News</h1>
     <div class="landing-quick-info-section-content">
-      <a href="#"><h3>Blog Post</h3></a>
+      <ul class="post-list">
+        {% for post in site.posts %}
+            {% if forloop.index0 < 3 %} <!-- Only display latest 3 -->
+              <li>
+                <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+                <h2 class="post-title">
+                  {% if post.link == null %}
+                    <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                  {% else %}
+                    <a class="post-link" href="{{ post.link }}" target="_blank">{{ post.title }}</a>
+                  {% endif %}
+                </h2>
+                  <p class="post-description">
+                     {{ post.description }}
+                  </p>
+              </li>
+              {% endif %}
+        {% endfor %}
+  </ul>
+  <a href="news">See all ></a>
+
     </div>
   </div>
 </div>
