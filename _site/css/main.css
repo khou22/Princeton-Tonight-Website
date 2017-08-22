@@ -422,6 +422,9 @@ pre {
   -webkit-filter: grayscale(0.5);
   filter: grayscale(0.5); }
 
+.guest-wrapper {
+  padding: 8px; }
+
 /**
  * Site header
  */
