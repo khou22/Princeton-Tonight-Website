@@ -70,6 +70,7 @@ task :post do
     post.puts "date: #{dateTime}"
     post.puts 'description: ""'
     post.puts 'link: null'
+    post.puts 'image: null'
     post.puts "featured: \"no\""
     post.puts "---"
     # post.puts "{% include JB/setup %}"

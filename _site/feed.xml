@@ -6,9 +6,20 @@
 </description>
     <link>http://0.0.0.0:8000/</link>
     <atom:link href="http://0.0.0.0:8000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 22 Aug 2017 13:23:12 -0700</pubDate>
-    <lastBuildDate>Tue, 22 Aug 2017 13:23:12 -0700</lastBuildDate>
+    <pubDate>Tue, 22 Aug 2017 13:32:42 -0700</pubDate>
+    <lastBuildDate>Tue, 22 Aug 2017 13:32:42 -0700</lastBuildDate>
     <generator>Jekyll v3.5.1</generator>
+    
+      <item>
+        <title>On Air, On the Fly</title>
+        <description>
+</description>
+        <pubDate>Tue, 22 Aug 2017 06:25:19 -0700</pubDate>
+        <link>http://0.0.0.0:8000/2017/08/22/on-air-on-the-fly.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:8000/2017/08/22/on-air-on-the-fly.html</guid>
+        
+        
+      </item>
     
       <item>
         <title>In Defense of Las Vegas</title>
