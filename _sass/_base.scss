@@ -6,6 +6,7 @@ p, blockquote, pre, hr,
 dl, dd, ol, ul, figure {
   margin: 0;
   padding: 0;
+  letter-spacing: 0.1px;
 }
 
 
@@ -93,7 +94,8 @@ a {
     text-decoration: none;
 
     &:visited {
-        color: darken($link-color, 15%);
+        // color: darken($link-color, 15%);
+        color: $link-color;
     }
 
     &:hover {

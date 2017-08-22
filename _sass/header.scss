@@ -39,16 +39,35 @@ $site-header-height: 150px; // Height of header
   }
 }
 
+$nav-width: 1000px;
+.site-nav-wrapper {
+    max-width: -webkit-calc(#{$nav-width} - (#{$spacing-unit} * 2));
+    max-width:         calc(#{$nav-width} - (#{$spacing-unit} * 2));
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: $spacing-unit;
+    padding-left: $spacing-unit;
+    @extend %clearfix;
+
+    @include media-query($on-laptop) {
+        max-width: -webkit-calc(#{$nav-width} - (#{$spacing-unit}));
+        max-width:         calc(#{$nav-width} - (#{$spacing-unit}));
+        padding-right: $spacing-unit / 2;
+        padding-left: $spacing-unit / 2;
+    }
+}
+
 .site-nav {
   // Stretch across entire header
-  width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
-  width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
+  width: 100%;
 
   // Position at the bottom of the navigation header
   position: absolute;
   bottom: 0;
 
-  line-height: $nav-height;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
 
   &-background {
     // Position in same place as links
