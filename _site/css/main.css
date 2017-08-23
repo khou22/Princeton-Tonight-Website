@@ -568,6 +568,8 @@ body {
     .landing-quick-info-section-content iframe {
       width: 100%;
       height: 300px; }
+  .landing-quick-info-section-events {
+    text-align: center; }
 .landing-quick-title {
   width: 100%;
   text-align: center; }

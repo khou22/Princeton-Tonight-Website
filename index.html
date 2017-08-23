@@ -2,55 +2,54 @@
 layout: fullscreen
 ---
 <div class="landing-section">
-  <video class="landing-video" autoplay loop muted>
-    <source src="assets/videos/nightlapses.mp4" type="video/mp4">
-  </video>
-  <img src="assets/images/logo-sample-4.png" class="landing-logo">
+    <video class="landing-video" autoplay loop muted>
+        <source src="assets/videos/nightlapses.mp4" type="video/mp4">
+    </video>
+    <img src="assets/images/logo-sample-4.png" class="landing-logo">
 </div>
 </div>
 <div class="landing-quick-info-section">
-  <div class="third-col border-right">
+<div class="third-col border-right">
     <h1 class="landing-quick-title">Videos</h1>
     <div class="landing-quick-info-section-content">
-      <a href="#"><h3>What it takes to get into Princeton!</h3></a>
-      <div>
-           <iframe width="560" src="https://www.youtube.com/embed/7HOxsPE29JE?controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-      </div>
+        <a href="#"><h3>What it takes to get into Princeton!</h3></a>
+        <div>
+            <iframe width="560" src="https://www.youtube.com/embed/7HOxsPE29JE?controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+        </div>
     </div>
-  </div>
-  <div class="third-col border-right">
+</div>
+<div class="third-col border-right">
     <h1 class="landing-quick-title">Upcoming Events</h1>
-    <div class="landing-quick-info-section-content">
-      <a href="#"><h3>Event with Link</h3></a>
+    <div class="landing-quick-info-section-content landing-quick-info-section-events">
+        <a href="https://www.facebook.com/PrincetonTonight/" target="_blank"><h3>See you at the Princeton activities fair!</h3></a>
+        <h3>Like us on <a href="https://www.facebook.com/PrincetonTonight/" target="_blank">Facebook</a> for upcoming events this fall!</h3>
     </div>
-  </div>
-  <div class="third-col">
+</div>
+<div class="third-col">
     <h1 class="landing-quick-title">News</h1>
     <div class="landing-quick-info-section-content">
-      <ul class="post-list">
-        {% for post in site.posts %}
-            {% if forloop.index0 < 3 %} <!-- Only display latest 3 -->
-              <li>
-                <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-                <h2 class="post-title">
-                  {% if post.link == null %}
-                    <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-                  {% else %}
-                    <a class="post-link" href="{{ post.link }}" target="_blank">{{ post.title }}</a>
-                  {% endif %}
-                </h2>
-                  <p class="post-description">
-                     {{ post.description }}
-                  </p>
-              </li>
-              {% endif %}
+        <ul class="post-list">
+            {% for post in site.posts %}
+                {% if forloop.index0 < 3 %} <!-- Only display latest 3 -->
+                <li>
+                    <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+                    <h2 class="post-title">
+                    {% if post.link == null %}
+                        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                    {% else %}
+                        <a class="post-link" href="{{ post.link }}" target="_blank">{{ post.title }}</a>
+                    {% endif %}
+                    </h2>
+                    <p class="post-description">
+                        {{ post.description }}
+                    </p>
+                </li>
+            {% endif %}
         {% endfor %}
-  </ul>
-  <a href="news">See all ></a>
-
-    </div>
-  </div>
+    </ul>
+    <a href="news">See all ></a>
+</div>
+</div>
 </div>
 <div class="image-divider nassau-evening-img">
 </div>

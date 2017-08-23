@@ -2,22 +2,9 @@
 layout: default
 ---
 
-<div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+<div class="film-festival-container">
+  <h1>Events</h1>
+  <h3>Speakers, performances, concerts, and more!</h3>
+  <h3>Stay tuned for the Fall 2017 schdule.</h3>
+  <p>For questions and suggestions for events please contact us <a href="mailto:tonight@princeton.edu">tonight@princeton.edu</a></p>
 </div>
