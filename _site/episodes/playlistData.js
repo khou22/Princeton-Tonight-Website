@@ -3,7 +3,7 @@ var playlistData = [
     name: "Episodes",
     subtitle: "Full SNL-style episodes",
     slug: "https://www.youtube.com/playlist?list=PLbToYZfGuVo8pP2fNzpxja46JcRShEqgf",
-    image: "http://arts.princeton.edu/wp-content/uploads/2016/02/princeton-tonight.jpg",
+    image: "../assets/episodes/episodes.png",
     category: "Episodes",
     categoryColor: "red",
     description: "Full episodes available for free on our YouTube page"
@@ -21,7 +21,7 @@ var playlistData = [
     name: "On The Street",
     subtitle: "An original Princeton Tonight series.",
     slug: "https://www.youtube.com/playlist?list=PLbToYZfGuVo8pP2fNzpxja46JcRShEqgf",
-    image: "http://arts.princeton.edu/wp-content/uploads/2016/02/princeton-tonight.jpg",
+    image: "../assets/episodes/on-the-street.png",
     category: "Shorts",
     categoryColor: "orange",
     description: "A video short series featuring people on the street!"
@@ -29,37 +29,28 @@ var playlistData = [
   {
     name: "Sketches",
     subtitle: "Original Princeton Tonight sketches.",
-    slug: "https://www.youtube.com/playlist?list=PLbToYZfGuVo9tq_tVshAh58MRoAcfIgwi",
-    image: "http://arts.princeton.edu/wp-content/uploads/2016/02/princeton-tonight.jpg",
-    category: "Shorts",
-    categoryColor: "orange",
-    description: "Sketches..."
+    slug: "https://www.youtube.com/playlist?list=plbtoyzfguvo9tq_tvshah58mroacfigwi",
+    image: "../assets/episodes/sketches.png",
+    category: "shorts",
+    categorycolor: "orange",
+    description: "sketches..."
   },
   {
     name: "Promos",
     subtitle: "Promo videos",
-    slug: "https://www.youtube.com/playlist?list=PLbToYZfGuVo-jh2HfQR0gX7OYt5wKyGjC",
-    image: "http://arts.princeton.edu/wp-content/uploads/2016/02/princeton-tonight.jpg",
-    category: "Unknown",
-    categoryColor: "orange",
-    description: "Promos..."
+    slug: "https://www.youtube.com/playlist?list=plbtoyzfguvo-jh2hfqr0gx7oyt5wkygjc",
+    image: "../assets/episodes/promos.png",
+    category: "unknown",
+    categorycolor: "orange",
+    description: "Promotional videos for our episodes and events."
   },
   {
-    name: "These Are Good Things",
-    subtitle: "Unknown...",
-    slug: "https://www.youtube.com/playlist?list=PLbToYZfGuVo8az-falm4WuZ1es7qxZlfa",
-    image: "http://arts.princeton.edu/wp-content/uploads/2016/02/princeton-tonight.jpg",
-    category: "Unknown",
-    categoryColor: "orange",
-    description: "Unknown..."
+    name: "Musical Guests",
+    subtitle: "rinceton Tonight's performers.",
+    slug: "https://www.youtube.com/playlist?list=PLbToYZfGuVo9Ri0ncGjPyzkr_cPfzV1Cd",
+    image: "../assets/episodes/musical-guests.jpg",
+    category: "Musical",
+    categoryColor: "red",
+    description: "Guests include Art Garfunkel, Sara Neal, Gaby Moreno, Lawrence (Band), and more!"
   },
-  {
-    name: "Rob Cohen an Colin Gray",
-    subtitle: "Unknown...",
-    slug: "https://www.youtube.com/playlist?list=PLbToYZfGuVo8xmm-Z1p82-qn5hsF_I046",
-    image: "http://arts.princeton.edu/wp-content/uploads/2016/02/princeton-tonight.jpg",
-    category: "Unknown",
-    categoryColor: "orange",
-    description: "Unknown..."
-  }
 ]
