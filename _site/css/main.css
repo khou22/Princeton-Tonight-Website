@@ -548,6 +548,11 @@ body {
   background-image: url(../assets/images/long-exposure-of-city-street.jpg);
   background-size: cover;
   background-repeat: no-repeat; }
+  .landing-section img {
+    animation: fadeIn 2s; }
+@keyframes fadeIn {
+  from {
+    opacity: 0; } }
 .landing-video {
   width: 100%;
   height: 100%;
