@@ -446,6 +446,13 @@ pre {
   height: 96px;
   margin-top: 2px;
   float: left; }
+  @media screen and (max-width: 600px) {
+    .site-title {
+      height: 70px;
+      width: 100%;
+      margin-top: 10px;
+      display: flex;
+      justify-content: center; } }
   .site-title, .site-title:visited {
     color: #424242; }
 
@@ -470,6 +477,11 @@ pre {
   display: flex;
   justify-content: space-between;
   margin: 10px 0; }
+  @media screen and (max-width: 600px) {
+    .site-nav {
+      flex-wrap: wrap;
+      padding: 0;
+      left: 0; } }
   .site-nav-background {
     width: 100vw;
     position: absolute;
@@ -485,41 +497,15 @@ pre {
     width: -webkit-calc((100% / 8) - 6px);
     color: #FFFFFF;
     line-height: 1.5; }
+    @media screen and (max-width: 600px) {
+      .site-nav .page-link {
+        width: 25%; } }
     .site-nav .page-link a {
       display: inline-block;
       width: 100%;
       text-align: center; }
-  @media screen and (max-width: 600px) {
-    .site-nav {
-      position: absolute;
-      top: 9px;
-      right: 30px;
-      background-color: #fdfdfd;
-      border: 1px solid #e8e8e8;
-      border-radius: 5px;
-      text-align: right; }
-      .site-nav .menu-icon {
-        display: block;
-        float: right;
-        width: 36px;
-        height: 26px;
-        line-height: 0;
-        padding-top: 10px;
-        text-align: center; }
-        .site-nav .menu-icon > svg {
-          width: 18px;
-          height: 15px; }
-          .site-nav .menu-icon > svg path {
-            fill: #424242; }
-      .site-nav .trigger {
-        clear: both;
-        display: none; }
-      .site-nav:hover .trigger {
-        display: block;
-        padding-bottom: 5px; }
-      .site-nav .page-link {
-        display: block;
-        padding: 5px 10px; } }
+    .site-nav .page-link a:focus {
+      outline: none; }
 
 .header-social-media {
   float: right;
@@ -532,6 +518,9 @@ pre {
     padding: 0; }
     .header-social-media ul li {
       display: inline; }
+  @media screen and (max-width: 600px) {
+    .header-social-media {
+      display: none; } }
 
 body {
   margin: 0 !important;
@@ -562,10 +551,17 @@ body {
   top: 20%;
   width: 70%;
   left: 15%; }
+  @media screen and (max-width: 600px) {
+    .landing-logo {
+      width: 100%;
+      left: 0; } }
 .landing-quick-info-section {
   margin-top: 16px;
   margin-bottom: 16px;
   display: flex; }
+  @media screen and (max-width: 600px) {
+    .landing-quick-info-section {
+      display: block; } }
   .landing-quick-info-section-content {
     width: 100%;
     padding: 24px;
@@ -582,6 +578,9 @@ body {
 .third-col {
   width: 33%;
   display: inline-block; }
+  @media screen and (max-width: 600px) {
+    .third-col {
+      width: 100%; } }
 
 .border-right {
   border-right: 1px solid white; }

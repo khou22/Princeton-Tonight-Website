@@ -33,6 +33,14 @@ $site-header-height: 150px; // Height of header
   margin-top: 2px;
   float: left;
 
+  @include media-query($on-palm) {
+      height: 70px;
+      width: 100%;
+      margin-top: 10px;
+      display: flex;
+      justify-content: center;
+  }
+
   &,
   &:visited {
     color: $grey-color-dark;
@@ -69,6 +77,12 @@ $nav-width: 1000px;
   justify-content: space-between;
   margin: 10px 0;
 
+  @include media-query($on-palm) {
+      flex-wrap: wrap;
+      padding: 0;
+      left: 0;
+  }
+
   &-background {
     // Position in same place as links
     width: 100vw;
@@ -91,6 +105,10 @@ $nav-width: 1000px;
 
     color: $text-color;
     line-height: $base-line-height;
+    
+    @include media-query($on-palm) {
+        width: 25%;
+    }
 
     a {
       // Page Links
@@ -98,49 +116,9 @@ $nav-width: 1000px;
       width: 100%;
       text-align: center;
     }
-  }
 
-  @include media-query($on-palm) {
-    position: absolute;
-    top: 9px;
-    right: 30px;
-    background-color: $background-color;
-    border: 1px solid $grey-color-light;
-    border-radius: 5px;
-    text-align: right;
-
-    .menu-icon {
-      display: block;
-      float: right;
-      width: 36px;
-      height: 26px;
-      line-height: 0;
-      padding-top: 10px;
-      text-align: center;
-
-      > svg {
-        width: 18px;
-        height: 15px;
-
-        path {
-          fill: $grey-color-dark;
-        }
-      }
-    }
-
-    .trigger {
-      clear: both;
-      display: none;
-    }
-
-    &:hover .trigger {
-      display: block;
-      padding-bottom: 5px;
-    }
-
-    .page-link {
-      display: block;
-      padding: 5px 10px;
+    a:focus {
+        outline: none
     }
   }
 }
@@ -162,4 +140,8 @@ $nav-width: 1000px;
       display: inline;
     }
   }
+
+    @include media-query($on-palm) {
+        display: none;
+    }
 }
