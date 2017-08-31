@@ -29,7 +29,7 @@ var playlistData = [
   {
     name: "Sketches",
     subtitle: "Original Princeton Tonight sketches.",
-    slug: "https://www.youtube.com/playlist?list=plbtoyzfguvo9tq_tvshah58mroacfigwi",
+    slug: "https://www.youtube.com/watch?v=QOTngiur0C0&list=PLbToYZfGuVo9tq_tVshAh58MRoAcfIgwi",
     image: "../assets/episodes/sketches.png",
     category: "shorts",
     categorycolor: "orange",
@@ -38,7 +38,7 @@ var playlistData = [
   {
     name: "Promos",
     subtitle: "Promo videos",
-    slug: "https://www.youtube.com/playlist?list=plbtoyzfguvo-jh2hfqr0gx7oyt5wkygjc",
+    slug: "https://www.youtube.com/playlist?list=PLbToYZfGuVo-jh2HfQR0gX7OYt5wKyGjC",
     image: "../assets/episodes/promos.png",
     category: "unknown",
     categorycolor: "orange",

@@ -1,7 +1,7 @@
 var gridData = {
   columns: 6,
   textColor: "white",
-  openNewWindow: false,
+  openNewWindow: true,
   data: []
 }
 
