@@ -424,6 +424,8 @@ pre {
 
 .guest-wrapper {
   padding: 8px; }
+  .guest-wrapper p {
+    text-align: center; }
 
 /**
  * Site header

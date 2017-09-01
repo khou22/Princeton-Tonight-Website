@@ -7,13 +7,13 @@ var gridData = {
 }
 
 for (var i = 0; i < imageData.length; i++) {
-  var currentImage = imageData[i];
+    var currentImage = imageData[i];
 
-  var gridItem = {
-    image: '../assets/images/gallery/' + currentImage,
-    link: '../assets/images/gallery/' + currentImage,
-    size: "1",
-  }
+    var gridItem = {
+        image: '../assets/images/gallery/' + currentImage,
+        link: '../assets/images/gallery/' + currentImage,
+        size: "1",
+    }
 
-  gridData.data.push(gridItem); // Add to data
+    gridData.data.push(gridItem); // Add to data
 }
