@@ -12,5 +12,9 @@ facebook_username: PrincetonTonight
 # Build settings
 markdown: kramdown
 
+# Gems
+plugins:
+  - jekyll-sitemap
+
 # Serve options
 port: 8000
