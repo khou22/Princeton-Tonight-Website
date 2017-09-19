@@ -18,6 +18,7 @@ $site-header-height: 150px; // Height of header
 
   // Background Image
   background-image: url("./../assets/images/Header_Image.png");
+  background-position: center;
 
   // To push main content lower and make visible under header
   &-placeholder {

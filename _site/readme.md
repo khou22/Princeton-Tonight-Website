@@ -18,3 +18,7 @@ Uses `bundle`. Installation: `gem install bundler`.
 # For admin:
 Create a shell script application that runs the admin and launches browser.  
 https://stackoverflow.com/questions/281372/executing-shell-scripts-from-the-os-x-dock
+
+# Bugs
+* Tile layout didn't hover for some reason
+* Header background image was repeating
