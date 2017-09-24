@@ -21,4 +21,4 @@ https://stackoverflow.com/questions/281372/executing-shell-scripts-from-the-os-x
 
 # Bugs
 * Tile layout didn't hover for some reason
-* Header background image was repeating
+* ~~Header background image was repeating~~
