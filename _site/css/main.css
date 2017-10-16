@@ -408,6 +408,9 @@ pre {
   line-height: 30px;
   content: ""; }
 
+.episodes-details {
+  text-align: center; }
+
 .film-festival-container {
   width: 100%;
   margin-top: 10%;
