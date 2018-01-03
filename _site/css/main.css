@@ -425,6 +425,19 @@ pre {
   -webkit-filter: grayscale(0.5);
   filter: grayscale(0.5); }
 
+@keyframes scrollLeft {
+  from {
+    transform: translateX(0%); }
+  to {
+    transform: translateX(-50%); } }
+.instafeed {
+  animation: scrollLeft 45s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite; }
+  .instafeed a {
+    display: inline-block;
+    margin: 24px; }
+
 .guest-wrapper {
   padding: 8px; }
   .guest-wrapper p {

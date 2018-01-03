@@ -22,3 +22,10 @@ https://stackoverflow.com/questions/281372/executing-shell-scripts-from-the-os-x
 # Bugs
 * Tile layout didn't hover for some reason
 * ~~Header background image was repeating~~
+
+# Instagram Access Token
+2940280590.6df8be9.0b623c0833674336af50d90a3ebcfec9
+
+Instagram user ID for @princetontonight: 2940280590
+
+See this [blog post](https://elfsight.com/blog/2016/05/how-to-get-instagram-access-token/).

@@ -10,8 +10,8 @@
     <meta name="description" content="">
 
     <link rel="stylesheet" href="/css/main.css">
-    <link rel="canonical" href="http://princetontonight.com/2017/07/01/student-produced-show-princeton-tonight-to-debut-in-february.html">
-    <link rel="alternate" type="application/rss+xml" title="Princeton Tonight" href="http://princetontonight.com/feed.xml" />
+    <link rel="canonical" href="http://localhost:8000/2017/07/01/student-produced-show-princeton-tonight-to-debut-in-february.html">
+    <link rel="alternate" type="application/rss+xml" title="Princeton Tonight" href="http://localhost:8000/feed.xml" />
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="/assets/icons/favicon.ico" type="image/x-icon">
@@ -124,7 +124,40 @@
       </div>
     </div>
 
-    <footer class="site-footer">
+    
+<!-- Instagram Feed -->
+<script type="text/javascript" src="/libraries/instafeedjs/instafeed.min.js"></script>
+<div id="instafeed" class="instafeed"></div>
+<script type="text/javascript">
+    var feed = new Instafeed({
+        get: 'user',
+        userId: '2940280590',
+        // clientId: '6df8be9481904f8ebafb0dffb184269c',
+        accessToken: '2940280590.6df8be9.0b623c0833674336af50d90a3ebcfec9',
+        // template: '<a class="instafeed-picture" href=""><img src="" /<a/>'
+        success: function(response) {
+            const width = 150 + 24 + 24; // Hard coded (width + 2x padding)
+            const widthOfDiv = width * response.data.length * 2; // Fitting double
+            const parent = document.getElementById('instafeed');
+            parent.setAttribute("style", `width:${widthOfDiv}px`);
+
+            // Copy and clone all the pictures to create "infinite" scrollLeft
+            for (var i = 0; i < response.data.length; i++) {
+                const image = response.data[i];
+                const childNode = document.createElement('a');
+                const imageNode = document.createElement('img');
+                imageNode.src = image.images.thumbnail.url; // Set image url
+                childNode.appendChild(imageNode);
+                childNode.href = image.link; // Set link
+                parent.appendChild(childNode); // Add the duplicated child
+            }
+        }
+    });
+    feed.run();
+</script>
+
+
+<footer class="site-footer">
     <div class="wrapper">
         <h2 class="footer-heading">Princeton Tonight</h2>
         <div class="footer-col-wrapper">
@@ -178,6 +211,7 @@
                 </div>
             </div>
         </footer>
+
 
   </body>
 

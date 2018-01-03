@@ -1,3 +1,36 @@
+
+<!-- Instagram Feed -->
+<script type="text/javascript" src="{{ site.baseurl }}/libraries/instafeedjs/instafeed.min.js"></script>
+<div id="instafeed" class="instafeed"></div>
+<script type="text/javascript">
+    var feed = new Instafeed({
+        get: 'user',
+        userId: '2940280590',
+        // clientId: '6df8be9481904f8ebafb0dffb184269c',
+        accessToken: '2940280590.6df8be9.0b623c0833674336af50d90a3ebcfec9',
+        // template: '<a class="instafeed-picture" href="{{link}}"><img src="{{image}}" /<a/>'
+        success: function(response) {
+            const width = 150 + 24 + 24; // Hard coded (width + 2x padding)
+            const widthOfDiv = width * response.data.length * 2; // Fitting double
+            const parent = document.getElementById('instafeed');
+            parent.setAttribute("style", `width:${widthOfDiv}px`);
+
+            // Copy and clone all the pictures to create "infinite" scrollLeft
+            for (var i = 0; i < response.data.length; i++) {
+                const image = response.data[i];
+                const childNode = document.createElement('a');
+                const imageNode = document.createElement('img');
+                imageNode.src = image.images.thumbnail.url; // Set image url
+                childNode.appendChild(imageNode);
+                childNode.href = image.link; // Set link
+                parent.appendChild(childNode); // Add the duplicated child
+            }
+        }
+    });
+    feed.run();
+</script>
+
+
 <footer class="site-footer">
     <div class="wrapper">
         <h2 class="footer-heading">{{ site.title }}</h2>

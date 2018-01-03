@@ -1,1 +1,1 @@
-Sitemap: http://princetontonight.com/sitemap.xml
+Sitemap: http://localhost:8000/sitemap.xml
