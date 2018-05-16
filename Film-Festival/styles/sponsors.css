@@ -1,0 +1,44 @@
+.sponsor-fox {
+	max-width: 40vw;
+    max-height: 300px;
+    display: block;
+    float: left;
+    margin-left: 30vw;
+    margin-top: 2vw;
+}
+
+.sponsor-others {
+	max-width: 25vw;
+	max-height: 200px;
+	display: block;
+	float : left;
+	margin-left: 16vw;
+	margin-top: 5vw;
+	margin-bottom: 3vw;
+}
+
+.sponsor-PT {
+    margin-bottom: 0;
+    margin-left: 22vw;
+    /* height: 50vw; */
+}
+
+.sponsor-Poster {
+	width: 50vw;
+	margin-left: -15vw;
+	height: 140vh;
+	margin-bottom: 2vw;
+	margin-top: 100px;
+}
+
+@media (max-width: 480px) {
+    .awards-section {
+        width: 20vw;
+    }
+}
+
+@media (max-width: 800px) {
+	.awards-section {
+		width: 25vw;
+	}
+}

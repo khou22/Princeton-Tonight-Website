@@ -1,0 +1,48 @@
+.carousel-container {
+	height: 300px;
+	width: 900px;
+    margin: auto;
+    padding-top: 30px;
+    padding-bottom: 100px;
+}
+
+.slick-prev {
+    left: 25px;
+    z-index: 1;
+}
+
+.slick-next {
+    right: 25px;
+}
+
+.slick-prev:before, .slick-next:before {
+   color: #000;
+}
+
+.slick-slide {
+	width: 225px;
+}
+
+i:hover {
+	cursor: pointer;
+	color: #ef8b34;
+}
+
+
+@media (max-width: 480px) {
+	.carousel-container {
+		height: 300px;
+    	width: 225px;
+    	padding-top: 30px;
+    	padding-bottom: 100px;
+	}
+}
+
+@media (max-width: 1024px) and (min-width: 480px){
+	.carousel-container {
+		height: 300px;
+    	width: 675px;
+    	padding-top: 30px;
+    	padding-bottom: 100px;
+	}
+}
