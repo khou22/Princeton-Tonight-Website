@@ -41,6 +41,9 @@
 <loc>http://princetontonight.com/news/</loc>
 </url>
 <url>
+<loc>http://princetontonight.com/events/</loc>
+</url>
+<url>
 <loc>http://princetontonight.com/photos/</loc>
 </url>
 <url>
@@ -50,7 +53,7 @@
 <loc>http://princetontonight.com/</loc>
 </url>
 <url>
-<loc>http://princetontonight.com/events/</loc>
+<loc>http://princetontonight.com/film-festival/</loc>
 </url>
 <url>
 <loc>http://princetontonight.com/episodes/</loc>
@@ -62,10 +65,6 @@
 <url>
 <loc>http://princetontonight.com/film-festival/assets/FilmFestivalPoster.pdf</loc>
 <lastmod>2018-05-16T14:58:57-07:00</lastmod>
-</url>
-<url>
-<loc>http://princetontonight.com/film-festival/index.html</loc>
-<lastmod>2018-06-09T15:14:19-07:00</lastmod>
 </url>
 <url>
 <loc>http://princetontonight.com/team/index.html</loc>
