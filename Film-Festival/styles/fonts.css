@@ -1,9 +1,0 @@
-/* Futura Font */
-@font-face {
-	font-family: Futura;
-	source: url(../styles/FuturaThin.ttf);
-}
-
-* {
-	font-family: Futura;
-}
