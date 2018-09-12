@@ -1,0 +1,29 @@
+.awards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.awards-section {
+    width: 33%;
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    padding: 24px;
+    box-sizing: border-box;
+}
+
+.awards-section img {
+    width: 200px;
+    margin: auto;
+    transition: 200ms transform;
+}
+
+.awards-section img:hover {
+    transform: scale(1.2);
+}
+
+@media (max-width: 480px) {
+    .awards-section {
+        width: 100%;
+    }
+}

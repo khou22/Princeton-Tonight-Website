@@ -1,0 +1,49 @@
+.landing-page {
+	width: 100vw;
+	height: 100vh;
+
+	background-image: url(../assets/Garfunkel.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+
+	position: absolute;
+}
+
+h1.center {
+	text-align: center;
+	padding-top: 45vh;
+	color: #F9F3F4;
+	text-shadow: 1px;
+	font-size: 52px;
+}
+
+.btn, .btn:active, .btn:visited {
+	color:#F9F3F4;
+	background-color: none;
+	border: none;
+	border-radius: 12px;
+	padding: 10px 20px;
+	border: solid #F9F3F4 3px;
+	text-align: center;
+	text-decoration: none;
+    transition: background-color 300ms; border 100ms;
+}
+
+.btn:hover{
+	background-color: #ffbf00; 
+	border-color: #ffbf00; 
+	color: #222;
+}
+
+.center {
+	text-align: center;
+}
+
+.landing-page h1 {
+    animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+}
